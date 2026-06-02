@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- Header Inner -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+
+    <div class="header">
+      <div class="mobile-header">
+        <div class="left-images">
+          <img src="img/kotam_logo.png" alt="Kotam logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="outmotives.html">Our Initiatives</a>
+        <a href="photogallary.html">Media</a>
+        <a href="citizen-feedback.html">Contact Us</a>
+        <a href="blog-single.html">About</a>
+        <a href="grievances.html">Grievances</a>
+        <div class="dropdown-nav">
+          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
+            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
+            <a href="volunteer.html">Join as a Volunteer</a>
+            <a href="mahila-shakti-grievance.html">Mahila Shakti Grievance</a>
+            <a href="social-media-grievance.html">Social Media Warriors</a>
+          </div>
+        </div>
+      </nav>
+      <div class="right-image">
+        <img
+          src="img/header/alliance3.png"
+          alt="Alliance"
+          style="width: 60px; height: 40px"
+        />
+        <img src="img/header/srntr.png" alt="Sr NTR" />
+        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+        <img src="img/header/modi.png" alt="Modi" />
+        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+        <img src="img/header/lokesh.png" alt="Lokesh" />
+        <img src="/public/ksr4.png" alt="KSR" />
+      </div>
+    </div>
+    <div class="welcome-message">
+      <h1>Welcome to the Official Website of Eluru MP Mahesh Kumar</h1>
+      <p>
+        Thank you for visiting! Here, you will find all the latest news,
+        updates, and information about our initiatives and services.
+      </p>
+      <p>You will be redirected to the home page shortly...</p>
+    </div>
+
+    <script>
+      // Redirect to another page after 3 seconds
+      setTimeout(function () {
+        window.location.href = "index.html"; // Change this to the page you want to redirect to
+      }, 3000);
+    </script>
+  </body>
+</html>

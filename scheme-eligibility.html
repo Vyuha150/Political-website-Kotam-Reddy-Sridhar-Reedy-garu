@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Scheme Eligibility, Government Schemes, Andhra Pradesh, TDP"
+    />
+    <meta
+      name="description"
+      content="Check your eligibility for government schemes. Fill the form and discover opportunities."
+    />
+    <meta name="copyright" content="Kotamreddy Sridhar Reddy" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Scheme Eligibility Checker</title>
+
+    <link rel="icon" href="img/kotam_logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--light-bg);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+      .form-container {
+        background-color: var(--primary-color);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 90%;
+        max-width: 650px;
+        margin: 40px auto;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .form-container h2 {
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+        font-size: 2em;
+        font-weight: 700;
+      }
+      .form-container .explanation {
+        font-size: 1.1em;
+        color: var(--text-color);
+        margin-bottom: 25px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+      .form-container label {
+        display: block;
+        text-align: left;
+        margin: 8px 0 4px 2px;
+        font-weight: 500;
+      }
+      .form-container input,
+      .form-container textarea,
+      .form-container select {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0 16px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      .form-container textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+      .form-container .checkbox-group,
+      .form-container .radio-group {
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .form-container .checkbox-group label,
+      .form-container .radio-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: 400;
+      }
+      .form-container button {
+        background-color: var(--button-success);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+      }
+      .form-container button:hover {
+        background-color: var(--button-success-hover);
+      }
+      .eligible-schemes {
+        background: #fff;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 18px 12px;
+        color: #222;
+        text-align: left;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        display: none;
+      }
+      .eligible-schemes h3 {
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+      }
+      .eligible-schemes ul {
+        margin: 0 0 0 18px;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="mobile-header">
+        <div class="left-images">
+          <img src="img/kotam_logo.png" alt="Kotam logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="outmotives.html" data-i18n="our_initiatives"
+          >Our Initiatives</a
+        >
+        <a href="photogallary.html" data-i18n="media">Media</a>
+        <a href="citizen-feedback.html" data-i18n="contact_us">Contact Us</a>
+        <a href="blog-single.html" data-i18n="about">About</a>
+        <a href="grievances.html" data-i18n="grievances">Grievances</a>
+        <div class="dropdown-nav">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            onclick="return false;"
+            data-i18n="join"
+            >Join</a
+          >
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
+              >Yuva Shakthi Member</a
+            >
+            <a
+              href="scheme-eligibility.html"
+              data-i18n="schemes_eligibility_form"
+              >Schemes & Eligibility Form</a
+            >
+            <a href="volunteer.html" data-i18n="join_volunteer"
+              >Join as a Volunteer</a
+            >
+            <a
+              href="mahila-shakti-grievance.html"
+              data-i18n="mahila_shakti_grievance"
+              >Mahila Shakti Grievance</a
+            >
+            <a
+              href="social-media-grievance.html"
+              data-i18n="social_media_warriors"
+              >Social Media Warriors</a
+            >
+          </div>
+        </div>
+        <a href="http://localhost:3000/signin" data-i18n="signin">Signin</a>
+      </nav>
+      <div class="right-image">
+        <img
+          src="img/header/alliance3.png"
+          alt="Alliance"
+          style="width: 60px; height: 40px"
+        />
+        <img src="img/header/srntr.png" alt="Sr NTR" />
+        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+        <img src="img/header/modi.png" alt="Modi" />
+        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+        <img src="img/header/lokesh.png" alt="Lokesh" />
+        <img src="/public/ksr4.png" alt="KSR" />
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h2>Scheme Eligibility Checker</h2>
+      <div class="explanation">
+        "Find out what government schemes you are eligible for based on your
+        profile. Fill the form below and discover opportunities that you may not
+        be aware of."
+      </div>
+      <form id="eligibilityForm" autocomplete="off">
+        <!-- A. Personal Details -->
+        <label for="fullname">Full Name / పూర్తి పేరు</label>
+        <input type="text" name="fullname" id="fullname" required />
+
+        <label for="age">Age / వయస్సు</label>
+        <input type="number" name="age" id="age" min="1" max="120" required />
+
+        <label for="gender">Gender / లింగం</label>
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected>
+            Select Gender / లింగాన్ని ఎంచుకోండి
+          </option>
+          <option value="male">Male / పురుషుడు</option>
+          <option value="female">Female / మహిళ</option>
+          <option value="other">Other / ఇతరులు</option>
+        </select>
+
+        <label for="mobile">Mobile Number / మొబైల్ నంబర్</label>
+        <input type="tel" name="mobile" id="mobile" required />
+
+        <label for="aadhaar"
+          >Aadhaar Number (Optional) / ఆధార్ నంబర్ (ఐచ్ఛికం)</label
+        >
+        <input type="text" name="aadhaar" id="aadhaar" maxlength="12" />
+
+        <!-- B. Social Background -->
+        <label for="caste">Caste Category / కులం</label>
+        <select name="caste" id="caste" required>
+          <option value="" disabled selected>
+            Select Caste / కులాన్ని ఎంచుకోండి
+          </option>
+          <option value="SC">SC / ఎస్సీ</option>
+          <option value="ST">ST / ఎస్టీ</option>
+          <option value="BC">BC / బీసీ</option>
+          <option value="OC">OC / ఓసీ</option>
+          <option value="Minority">Minority / మైనారిటీ</option>
+        </select>
+
+        <label for="marital">Marital Status / వివాహ స్థితి</label>
+        <select name="marital" id="marital" required>
+          <option value="" disabled selected>
+            Select Status / స్థితిని ఎంచుకోండి
+          </option>
+          <option value="Single">Single / అవివాహిత</option>
+          <option value="Married">Married / వివాహిత</option>
+          <option value="Widowed">Widowed / విధవ</option>
+          <option value="Divorced">Divorced / విడాకులు పొందిన</option>
+        </select>
+
+        <label>Disability / వికలాంగత</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="disability" value="No" checked /> No /
+            లేదు</label
+          >
+          <label
+            ><input type="radio" name="disability" value="Yes" /> Yes /
+            ఉంది</label
+          >
+        </div>
+        <input
+          type="text"
+          name="disability_details"
+          id="disability_details"
+          placeholder="If Yes, specify / ఉంటే వివరించండి"
+          style="display: none"
+        />
+
+        <label for="income">Family Annual Income / కుటుంబ వార్షిక ఆదాయం</label>
+        <select name="income" id="income" required>
+          <option value="" disabled selected>
+            Select Income / ఆదాయాన్ని ఎంచుకోండి
+          </option>
+          <option value="Below 1L">Below 1L / 1 లక్షకు తక్కువ</option>
+          <option value="1-2.5L">1-2.5L / 1-2.5 లక్షలు</option>
+          <option value="2.5-5L">2.5-5L / 2.5-5 లక్షలు</option>
+          <option value="Above 5L">Above 5L / 5 లక్షలకు పైగా</option>
+        </select>
+
+        <!-- C. Education & Employment -->
+        <label for="education">Highest Education / గరిష్ట విద్య</label>
+        <select name="education" id="education" required>
+          <option value="" disabled selected>
+            Select Education / విద్యను ఎంచుకోండి
+          </option>
+          <option value="10th">10th / పదవ తరగతి</option>
+          <option value="Inter">Intermediate / ఇంటర్మీడియట్</option>
+          <option value="Degree">Degree / డిగ్రీ</option>
+          <option value="PG">Post Graduation / పీజీ</option>
+          <option value="PhD">PhD / పీహెచ్.డి</option>
+        </select>
+
+        <label for="employment">Employment Status / ఉద్యోగ స్థితి</label>
+        <select name="employment" id="employment" required>
+          <option value="" disabled selected>
+            Select Status / స్థితిని ఎంచుకోండి
+          </option>
+          <option value="Student">Student / విద్యార్థి</option>
+          <option value="Unemployed">Unemployed / నిరుద్యోగి</option>
+          <option value="Employed">Employed / ఉద్యోగి</option>
+          <option value="Govt Employee">
+            Govt Employee / ప్రభుత్వ ఉద్యోగి
+          </option>
+          <option value="Farmer">Farmer / రైతు</option>
+          <option value="Entrepreneur">Entrepreneur / వ్యాపారవేత్త</option>
+        </select>
+
+        <label>Skill Training Completed? / నైపుణ్య శిక్షణ పూర్తయ్యిందా?</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="skill_training" value="No" checked /> No
+            / లేదు</label
+          >
+          <label
+            ><input type="radio" name="skill_training" value="Yes" /> Yes /
+            ఉంది</label
+          >
+        </div>
+        <input
+          type="text"
+          name="skill_training_details"
+          id="skill_training_details"
+          placeholder="If Yes, details / ఉంటే వివరాలు"
+          style="display: none"
+        />
+
+        <!-- D. Initiatives Taken -->
+        <label
+          >Involved in any social service? / ఏదైనా సామాజిక సేవలో
+          పాల్గొన్నారా?</label
+        >
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="social_service" value="No" checked /> No
+            / లేదు</label
+          >
+          <label
+            ><input type="radio" name="social_service" value="Yes" /> Yes /
+            ఉంది</label
+          >
+        </div>
+        <input
+          type="text"
+          name="social_service_details"
+          id="social_service_details"
+          placeholder="If Yes, details / ఉంటే వివరాలు"
+          style="display: none"
+        />
+
+        <label
+          >Member of any welfare board or union? / ఏదైనా సంక్షేమ బోర్డు లేదా
+          సంఘానికి సభ్యుడా?</label
+        >
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="welfare_member" value="No" checked /> No
+            / కాదు</label
+          >
+          <label
+            ><input type="radio" name="welfare_member" value="Yes" /> Yes /
+            అవును</label
+          >
+        </div>
+
+        <!-- E. Schemes You Are Interested In -->
+        <label for="schemes"
+          >Schemes You Are Interested In / మీరు ఆసక్తి ఉన్న పథకాలు</label
+        >
+        <select name="schemes" id="schemes" required>
+          <option value="" disabled selected>
+            Select a Scheme / పథకాన్ని ఎంచుకోండి
+          </option>
+          <option value="Aadabidda Nidhi Scheme (Women’s Economic Empowerment)">
+            Aadabidda Nidhi Scheme (Women’s Economic Empowerment) / ఆదాబిడ్డ
+            నిధి పథకం (మహిళా ఆర్థిక సాధికారత)
+          </option>
+          <option
+            value="Talliki Vandanam Scheme (Support for School-Going Children)"
+          >
+            Talliki Vandanam Scheme (Support for School-Going Children) /
+            తల్లికి వందనం పథకం (పాఠశాల విద్యార్థులకు మద్దతు)
+          </option>
+          <option value="Annadata Scheme (Farmer Income Support)">
+            Annadata Scheme (Farmer Income Support) / అన్నదాత పథకం (రైతులకు ఆదాయ
+            మద్దతు)
+          </option>
+          <option value="Chandranna Pelli Kanuka Scheme (Marriage Assistance)">
+            Chandranna Pelli Kanuka Scheme (Marriage Assistance) / చంద్రన్న
+            పెళ్లి కనుక పథకం (పెళ్లి సహాయం)
+          </option>
+          <option
+            value="AP Free Power Supply Scheme (Agricultural Power Subsidy)"
+          >
+            AP Free Power Supply Scheme (Agricultural Power Subsidy) / ఏపీ ఉచిత
+            విద్యుత్ పథకం (వ్యవసాయ విద్యుత్ సబ్సిడీ)
+          </option>
+          <option value="APSRTC Free Bus Scheme (Women’s Public Transport)">
+            APSRTC Free Bus Scheme (Women’s Public Transport) / ఏపీఎస్‌ఆర్‌టీసీ
+            ఉచిత బస్సు పథకం (మహిళలకు ప్రజా రవాణా)
+          </option>
+          <option
+            value="YSR Bharosa Pension (Senior Citizens, Widows, Weavers, Transgender)"
+          >
+            YSR Bharosa Pension (Senior Citizens, Widows, Weavers, Transgender)
+            / వైఎస్ఆర్ భరోసా పెన్షన్ (వృద్ధులు, విధవలు, నేయర్లు,
+            ట్రాన్స్‌జెండర్‌లు)
+          </option>
+          <option value="Disability Assistance (Six Guarantee)">
+            Disability Assistance (Six Guarantee) / వికలాంగులకు సహాయం (సిక్స్
+            గ్యారంటీ)
+          </option>
+        </select>
+
+        <button type="submit">Check Eligibility / అర్హతను పరిశీలించండి</button>
+      </form>
+
+      <div class="eligible-schemes" id="eligibleSchemes">
+        <h3>Eligible Schemes / అర్హత గల పథకాలు</h3>
+        <ul id="schemesList">
+          <!-- Results will appear here -->
+        </ul>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div style="justify-content: center">
+        <footer id="footer" class="footer">
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
+                >
+                  <div class="single-footer">
+                    <h2 data-i18n="about_us">About Us</h2>
+                    <p data-i18n="about_us_desc">
+                      We are committed to making a positive impact on society
+                      through our objectives and initiatives. Join us in our
+                      mission for a better tomorrow.
+                    </p>
+                    <!-- Social -->
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/kotamreddysridharreddy"
+                          target="_blank"
+                          ><i class="icofont-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/kotamreddysridharreddy"
+                          target="_blank"
+                          ><i class="icofont-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://x.com/KotamreddySridhar" target="_blank"
+                          ><i class="icofont-twitter"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <!-- End Social -->
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
+                >
+                  <div class="single-footer f-link">
+                    <h2 data-i18n="quick_links">Quick Links</h2>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <ul>
+                          <li>
+                            <a href="index.html"
+                              ><i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                                data-i18n="home"
+                              ></i
+                              >Home</a
+                            >
+                          </li>
+                          <li>
+                            <a href="contact.html"
+                              ><i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                                data-i18n="about_us_link"
+                              ></i
+                              >About Us</a
+                            >
+                          </li>
+                          <li>
+                            <a href="outmotives.html"
+                              ><i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                                data-i18n="motive"
+                              ></i
+                              >Motive</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
+                >
+                  <div class="single-footer">
+                    <h2 data-i18n="newsletter">Newsletter</h2>
+                    <p data-i18n="newsletter_desc">
+                      Subscribe to our newsletter for the latest updates and
+                      news.
+                    </p>
+                    <form
+                      action="mail/mail.php"
+                      method="get"
+                      target="_blank"
+                      class="newsletter-inner"
+                    >
+                      <input
+                        name="email"
+                        placeholder="Email Address"
+                        class="common-input"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your email address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="button">
+                        <i class="icofont icofont-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ End Footer Top -->
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="copyright-content">
+                    <p data-i18n="copyright">
+                      © Copyright 2024 |
+                      <a href="privacy-policy.html" target="_blank"
+                        >Privacy Policy</a
+                      >
+                      | All Rights Reserved by Kotamreddy Sridhar Reddy
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ End Copyright -->
+        </footer>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/pagescroll.min.js"></script>
+    <script src="js/active.js"></script>
+    <script type="module" src="js/supabaseClient.js"></script>
+    <script type="module" src="js/scheme-eligibility.js"></script>
+
+    <script>
+      // Show/hide disability details
+      document
+        .querySelectorAll('input[name="disability"]')
+        .forEach(function (el) {
+          el.addEventListener("change", function () {
+            document.getElementById("disability_details").style.display =
+              this.value === "Yes" ? "block" : "none";
+          });
+        });
+
+      // Show/hide skill training details
+      document
+        .querySelectorAll('input[name="skill_training"]')
+        .forEach(function (el) {
+          el.addEventListener("change", function () {
+            document.getElementById("skill_training_details").style.display =
+              this.value === "Yes" ? "block" : "none";
+          });
+        });
+
+      // Show/hide social service details
+      document
+        .querySelectorAll('input[name="social_service"]')
+        .forEach(function (el) {
+          el.addEventListener("change", function () {
+            document.getElementById("social_service_details").style.display =
+              this.value === "Yes" ? "block" : "none";
+          });
+        });
+
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+
+      // Eligibility logic (basic demo)
+      document
+        .getElementById("eligibilityForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          // Map for scheme info
+          const schemeInfo = {
+            "Aadabidda Nidhi Scheme (Women’s Economic Empowerment)":
+              "Monthly ₹1,500 direct transfer to women (18–59 years) from vulnerable households. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "Talliki Vandanam Scheme (Support for School-Going Children)":
+              "₹15,000/year for students (Class 1–12) from disadvantaged families for education expenses. <a href='https://business-standard.com' target='_blank'>More info</a>",
+            "Annadata Scheme (Farmer Income Support)":
+              "₹20,000/year to registered farmers in installments, supplementing PM Kisan. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "Chandranna Pelli Kanuka Scheme (Marriage Assistance)":
+              "₹1,00,000 for eligible couples, especially SC/ST/OBC/inter-caste marriages. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "AP Free Power Supply Scheme (Agricultural Power Subsidy)":
+              "Up to 9 hours/day free electricity for registered agricultural consumers. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "APSRTC Free Bus Scheme (Women’s Public Transport)":
+              "Free APSRTC bus travel for all women aged 18+ in Andhra Pradesh. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "YSR Bharosa Pension (Senior Citizens, Widows, Weavers, Transgender)":
+              "Pension increased to ₹4,000/month for eligible groups. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "Disability Assistance (Six Guarantee)":
+              "₹15,000/year for disabled persons for medical and rehabilitation support. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+          };
+          var selected = Array.from(
+            document.getElementById("schemes").selectedOptions
+          ).map((o) => o.value);
+          var list = document.getElementById("schemesList");
+          list.innerHTML = "";
+          if (selected.length) {
+            selected.forEach(function (scheme) {
+              var li = document.createElement("li");
+              li.innerHTML = schemeInfo[scheme] || scheme;
+              list.appendChild(li);
+            });
+            document.getElementById("eligibleSchemes").style.display = "block";
+          } else {
+            document.getElementById("eligibleSchemes").style.display = "none";
+          }
+        });
+    </script>
+    <div
+      id="language-popup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fffbe6;
+          padding: 32px 24px;
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+          text-align: center;
+          max-width: 90vw;
+        "
+      >
+        <h2 style="margin-bottom: 18px">
+          Please select your language<br /><span style="font-size: 1.1em"
+            >దయచేసి మీ భాషను ఎంచుకోండి</span
+          >
+        </h2>
+        <button
+          id="lang-en"
+          style="
+            margin: 10px 18px 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          English
+        </button>
+        <button
+          id="lang-te"
+          style="
+            margin: 10px 0 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          తెలుగు
+        </button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { translations } from "./js/translations.js";
+
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      // Show popup only if language not set
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
+      });
+
+      // Handle language selection
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
+    </script>
+  </body>
+</html>

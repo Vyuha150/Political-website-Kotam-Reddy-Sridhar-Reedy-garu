@@ -1,0 +1,242 @@
+<!-- Sign Up Page: signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Telugu Desam Party (TDP)</title>
+    <link rel="icon" href="img/kotam_logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .signup-main-wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+      }
+      .signup-card {
+        display: flex;
+        width: 900px;
+        max-width: 98vw;
+        min-height: 600px;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 8px 40px rgba(23, 64, 139, 0.13);
+        overflow: hidden;
+      }
+      .signup-left {
+        flex: 1.1;
+        background: #ffe600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 32px;
+        text-align: center;
+        position: relative;
+      }
+      .signup-left img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid #17408b;
+        box-shadow: 0 4px 24px #ffd60044;
+        margin-bottom: 24px;
+        background: #fff;
+      }
+      .signup-left h3 {
+        color: #17408b;
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .signup-left p {
+        color: #333;
+        font-size: 1.15em;
+        margin-bottom: 0;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .signup-right {
+        flex: 1.3;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 36px;
+      }
+      .signup-form-box {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+      }
+      .signup-form-box h2 {
+        color: #17408b;
+        font-weight: 700;
+        margin-bottom: 18px;
+        letter-spacing: 0.5px;
+      }
+      .signup-form-box label {
+        display: block;
+        text-align: left;
+        margin: 12px 0 4px 2px;
+        font-weight: 500;
+        color: #222;
+      }
+      .signup-form-box input,
+      .signup-form-box select {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 16px;
+        border: 1.5px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 1em;
+        background: #f9f9f9;
+        transition: border 0.2s;
+      }
+      .signup-form-box input:focus,
+      .signup-form-box select:focus {
+        border: 1.5px solid #ffd600;
+        outline: none;
+        background: #fffde7;
+      }
+      .signup-form-box button {
+        background: #ffe600;
+        color: #222;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: 700;
+        transition: background 0.3s, color 0.3s;
+        margin-top: 10px;
+        width: 100%;
+        box-shadow: 0 2px 12px #ffd60033;
+        letter-spacing: 0.5px;
+      }
+      .signup-form-box button:hover {
+        background: linear-gradient(90deg, #17408b 60%, #ffd600 100%);
+        color: #fff;
+      }
+      .signup-form-box .switch-link {
+        margin-top: 18px;
+        font-size: 1em;
+      }
+      .signup-form-box .switch-link a {
+        color: #17408b;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+      @media (max-width: 900px) {
+        .signup-card {
+          flex-direction: column;
+          min-height: unset;
+          width: 98vw;
+        }
+        .signup-left,
+        .signup-right {
+          padding: 32px 12px;
+        }
+        .signup-left img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      @media (max-width: 600px) {
+        .signup-card {
+          border-radius: 0;
+          box-shadow: none;
+        }
+        .signup-left,
+        .signup-right {
+          padding: 18px 4vw;
+        }
+        .signup-form-box {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-main-wrapper">
+      <div class="signup-card">
+        <div class="signup-left">
+          <img src="/public/ksr4.png" alt="Kotamreddy Sridhar Reddy" />
+          <h3>Kotamreddy Sridhar Reddy</h3>
+          <p>
+            Join the movement for a better Andhra Pradesh.<br />
+            Fill the form to become a member.
+          </p>
+        </div>
+        <div class="signup-right">
+          <div class="signup-form-box">
+            <h2>Sign Up</h2>
+            <form action="index.html" method="post" autocomplete="on">
+              <label for="signup-name">Full Name</label>
+              <input
+                type="text"
+                id="signup-name"
+                name="signup-name"
+                required
+                placeholder="Enter your full name"
+              />
+
+              <label for="signup-email">Email</label>
+              <input
+                type="email"
+                id="signup-email"
+                name="signup-email"
+                required
+                placeholder="Enter your email"
+              />
+
+              <label for="signup-mobile">Mobile Number</label>
+              <input
+                type="tel"
+                id="signup-mobile"
+                name="signup-mobile"
+                required
+                placeholder="Enter your mobile number"
+              />
+
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                name="signup-password"
+                required
+                placeholder="Create a password"
+              />
+
+              <label for="signup-gender">Gender</label>
+              <select id="signup-gender" name="signup-gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+
+              <button type="submit">Sign Up</button>
+            </form>
+            <div class="switch-link">
+              Already have an account? <a href="http://localhost:3000/signin">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/supabaseClient.js"></script>
+    <script type="module" src="js/auth.js"></script>
+  </body>
+</html>

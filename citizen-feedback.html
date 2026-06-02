@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Citizen Feedback, Digital Vote, Nellore, MP Survey, Community Voice"
+    />
+    <meta
+      name="description"
+      content="Cast your digital vote and share feedback on key issues affecting Nellore region. Help your MP serve you better."
+    />
+    <meta name="copyright" content="Kotamreddy Sridhar Reddy" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Digital Vote - Citizen Feedback Form | Nellore Region</title>
+
+    <link rel="icon" href="img/kotam_logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--light-bg);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+      .form-container {
+        background-color: var(--primary-color);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 90%;
+        max-width: 800px;
+        margin: 40px auto;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .form-container h2 {
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+        font-size: 2em;
+        font-weight: 700;
+      }
+      .form-container .explanation {
+        font-size: 1.1em;
+        color: var(--text-color);
+        margin-bottom: 25px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        padding: 15px;
+      }
+      .section-header {
+        background: linear-gradient(135deg, #ffd600, #ffed4e);
+        color: #333;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 25px 0 15px 0;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+      .form-container label {
+        display: block;
+        text-align: left;
+        margin: 12px 0 6px 2px;
+        font-weight: 500;
+      }
+      .form-container input,
+      .form-container textarea,
+      .form-container select {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0 16px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      .form-container textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+      .radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        text-align: left;
+      }
+      .radio-group label {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-weight: 400;
+        font-size: 0.95em;
+        cursor: pointer;
+      }
+      .radio-group input[type="radio"] {
+        width: auto;
+        margin: 0 8px 0 0;
+        padding: 0;
+      }
+      .question-item {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+      .satisfaction-rating {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 15px;
+        border-radius: 8px;
+        margin: 15px 0;
+      }
+      .final-question {
+        background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+        border: 2px solid #28a745;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 25px 0;
+      }
+      .form-container button {
+        background-color: var(--button-success);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+      }
+      .form-container button[type="reset"] {
+        background-color: #aaa;
+        color: #fff;
+        margin-left: 10px;
+      }
+      .form-container button:hover {
+        background-color: var(--button-success-hover);
+      }
+      .ksr-image-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .ksr-image-container img {
+        max-width: 160px;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+        margin-bottom: 18px;
+      }
+      @media (max-width: 768px) {
+        .form-container {
+          padding: 15px;
+        }
+        .radio-group {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .radio-group label {
+          font-size: 0.9em;
+        }
+      }
+      .te-txt {
+        color: #4b2e06 !important;
+        font-family: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="mobile-header">
+        <div class="left-images">
+          <img src="img/kotam_logo.png" alt="Kotam logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="outmotives.html" data-i18n="our_initiatives"
+          >Our Initiatives</a
+        >
+        <a href="photogallary.html" data-i18n="media">Media</a>
+        <a href="citizen-feedback.html" data-i18n="contact_us">Contact Us</a>
+        <a href="blog-single.html" data-i18n="about">About</a>
+        <a href="grievances.html" data-i18n="grievances">Grievances</a>
+        <div class="dropdown-nav">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            onclick="return false;"
+            data-i18n="join"
+            >Join</a
+          >
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
+              >Yuva Shakthi Member</a
+            >
+            <a
+              href="scheme-eligibility.html"
+              data-i18n="schemes_eligibility_form"
+              >Schemes & Eligibility Form</a
+            >
+            <a href="volunteer.html" data-i18n="join_volunteer"
+              >Join as a Volunteer</a
+            >
+            <a
+              href="mahila-shakti-grievance.html"
+              data-i18n="mahila_shakti_grievance"
+              >Mahila Shakti Grievance</a
+            >
+            <a
+              href="social-media-grievance.html"
+              data-i18n="social_media_warriors"
+              >Social Media Warriors</a
+            >
+          </div>
+        </div>
+        <a href="http://localhost:3000/signin" data-i18n="signin">Signin</a>
+      </nav>
+      <div class="right-image">
+        <img
+          src="img/header/alliance3.png"
+          alt="Alliance"
+          style="width: 60px; height: 40px"
+        />
+        <img src="img/header/srntr.png" alt="Sr NTR" />
+        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+        <img src="img/header/modi.png" alt="Modi" />
+        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+        <img src="img/header/lokesh.png" alt="Lokesh" />
+        <img src="/public/ksr4.png" alt="KSR" />
+      </div>
+    </div>
+
+    <div class="ksr-image-container">
+      <img src="/public/ksr4.png" alt="Kotamreddy Sridhar Reddy" />
+    </div>
+
+    <div class="form-container">
+      <h2>🗳 Cast Your Digital Vote</h2>
+      <div class="explanation">
+        <strong>Citizen Feedback Form for Nellore Region</strong><br />
+        Help your MP serve you better. Share your opinion on key areas impacting
+        our community.
+      </div>
+
+      <form action="#" method="post" id="citizenFeedbackForm">
+        <!-- Personal Information -->
+        <div class="section-header">
+          📋 Personal Information /
+          <span class="te-txt">వ్యక్తిగత సమాచారం</span>
+        </div>
+
+        <label for="cf_name">
+          Full Name / <span class="te-txt">పూర్తి పేరు</span>
+        </label>
+        <input type="text" name="cf_name" id="cf_name" required />
+
+        <label for="cf_mobile">
+          Mobile Number / <span class="te-txt">మొబైల్ నంబర్</span>
+        </label>
+        <input type="tel" name="cf_mobile" id="cf_mobile" required />
+
+        <label for="cf_area">
+          Area/Village / <span class="te-txt">ప్రాంతం/గ్రామం</span>
+        </label>
+        <input type="text" name="cf_area" id="cf_area" required />
+
+        <!-- 1. Infrastructure -->
+        <div class="section-header">
+          🏗️ 1. Infrastructure (Roads, Water, Electricity, Transport) /
+          <span class="te-txt">మౌలిక వసతులు</span>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Are the roads in your locality in good condition? /
+            <span class="te-txt"
+              >మీ ప్రాంతంలో రోడ్లు మంచి స్థితిలో ఉన్నాయా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="roads_condition"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="roads_condition" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="roads_condition" value="Partially" />
+              Partially / <span class="te-txt">కొంతవరకు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Do you face regular power cuts or voltage fluctuations? /
+            <span class="te-txt"
+              >మీరు తరచుగా కరెంట్ కట్స్ లేదా వోల్టేజ్ ఇబ్బందులు
+              ఎదుర్కొంటున్నారా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="power_issues" value="Yes" required />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="power_issues" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="power_issues" value="Sometimes" />
+              Sometimes / <span class="te-txt">కొన్నిసార్లు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Is there a consistent water supply in your area? /
+            <span class="te-txt"
+              >మీ ప్రాంతంలో నిరంతర నీటి సరఫరా ఉందా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="water_supply" value="Yes" required />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="water_supply" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="water_supply" value="Irregular" />
+              Irregular / <span class="te-txt">అక్రమం</span></label
+            >
+          </div>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Are drainage and sewage systems properly maintained? /
+            <span class="te-txt"
+              >డ్రైనేజీ మరియు మురుగు వ్యవస్థలు సరిగ్గా
+              నిర్వహించబడుతున్నాయా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="drainage_system"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="drainage_system" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="drainage_system" value="Partially" />
+              Partially / <span class="te-txt">కొంతవరకు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Do public transport options meet your daily commuting needs? /
+            <span class="te-txt"
+              >ప్రజా రవాణా సౌకర్యాలు మీ రోజువారీ అవసరాలను తీర్చుతున్నాయా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="public_transport"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="public_transport" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="public_transport" value="Partially" />
+              Partially / <span class="te-txt">కొంతవరకు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="satisfaction-rating">
+          <label
+            >Rate your satisfaction with local infrastructure /
+            <span class="te-txt"
+              >స్థానిక మౌలిక వసతులతో మీ సంతృప్తిని రేట్ చేయండి</span
+            >:</label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="infrastructure_satisfaction"
+                value="Very Unsatisfied"
+                required
+              />
+              Very Unsatisfied /
+              <span class="te-txt">చాలా అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="infrastructure_satisfaction"
+                value="Unsatisfied"
+              />
+              Unsatisfied / <span class="te-txt">అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="infrastructure_satisfaction"
+                value="Neutral"
+              />
+              Neutral / <span class="te-txt">తటస్థ</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="infrastructure_satisfaction"
+                value="Satisfied"
+              />
+              Satisfied / <span class="te-txt">సంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="infrastructure_satisfaction"
+                value="Very Satisfied"
+              />
+              Very Satisfied / <span class="te-txt">చాలా సంతృప్తి</span></label
+            >
+          </div>
+        </div>
+
+        <!-- 2. Government Schemes -->
+        <div class="section-header">
+          🏛️ 2. Government Schemes (PMAY, Ayushman Bharat, Subsidies, PDS, etc.)
+          /
+          <span class="te-txt">ప్రభుత్వ పథకాలు</span>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Are you aware of central and state welfare schemes available to
+            you? /
+            <span class="te-txt"
+              >మీకు అందుబాటులో ఉన్న కేంద్ర మరియు రాష్ట్र సంక్షేమ పథకాల గురించి
+              మీకు తెలుసా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="scheme_awareness"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="scheme_awareness" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="scheme_awareness" value="Partially" />
+              Partially / <span class="te-txt">కొంతవరకు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Have you or your family been able to successfully avail any scheme
+            benefits? /
+            <span class="te-txt"
+              >మీరు లేదా మీ కుటుంబం ఏదైనా పథక ప్రయోజనాలను విజయవంతంగా
+              పొందగలిగారా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="scheme_benefits"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="scheme_benefits" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="scheme_benefits" value="Some" /> Some /
+              <span class="te-txt">కొన్ని</span></label
+            >
+          </div>
+        </div>
+
+        <div class="satisfaction-rating">
+          <label
+            >Rate your satisfaction with scheme implementation /
+            <span class="te-txt">పథక అమలుతో మీ సంతృప్తిని రేట్ చేయండి</span
+            >:</label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="scheme_satisfaction"
+                value="Very Unsatisfied"
+                required
+              />
+              Very Unsatisfied /
+              <span class="te-txt">చాలా అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="scheme_satisfaction"
+                value="Unsatisfied"
+              />
+              Unsatisfied / <span class="te-txt">అసంతృప్తి</span></label
+            >
+            <label
+              ><input type="radio" name="scheme_satisfaction" value="Neutral" />
+              Neutral / <span class="te-txt">తటస్థ</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="scheme_satisfaction"
+                value="Satisfied"
+              />
+              Satisfied / <span class="te-txt">సంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="scheme_satisfaction"
+                value="Very Satisfied"
+              />
+              Very Satisfied / <span class="te-txt">చాలా సంతృప్తి</span></label
+            >
+          </div>
+        </div>
+
+        <!-- 3. Education -->
+        <div class="section-header">
+          🎓 3. Education (Schools, Colleges, Skill Development) /
+          <span class="te-txt">విద్య</span>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Are government schools and colleges in your area well-equipped and
+            staffed? /
+            <span class="te-txt"
+              >మీ ప్రాంతంలోని ప్రభుత్వ పాఠశాలలు మరియు కళాశాలలు బాగా సన్నద్ధమై
+              ఉన్నాయా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="education_facilities"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="education_facilities" value="No" /> No
+              / <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="education_facilities"
+                value="Partially"
+              />
+              Partially / <span class="te-txt">కొంతవరకు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="satisfaction-rating">
+          <label
+            >Rate your satisfaction with education facilities in the region /
+            <span class="te-txt"
+              >ప్రాంతంలోని విద్యా సౌకర్యాలతో మీ సంతృప్తిని రేట్ చేయండి</span
+            >:</label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="education_satisfaction"
+                value="Very Unsatisfied"
+                required
+              />
+              Very Unsatisfied /
+              <span class="te-txt">చాలా అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="education_satisfaction"
+                value="Unsatisfied"
+              />
+              Unsatisfied / <span class="te-txt">అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="education_satisfaction"
+                value="Neutral"
+              />
+              Neutral / <span class="te-txt">తటస్థ</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="education_satisfaction"
+                value="Satisfied"
+              />
+              Satisfied / <span class="te-txt">సంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="education_satisfaction"
+                value="Very Satisfied"
+              />
+              Very Satisfied / <span class="te-txt">చాలా సంతృప్తి</span></label
+            >
+          </div>
+        </div>
+
+        <!-- 4. Employment Opportunities -->
+        <div class="section-header">
+          💼 4. Globalisation & Employment Opportunities /
+          <span class="te-txt">ప్రపంచీకరణ & ఉపాధి అవకాశాలు</span>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Are there enough local employment or entrepreneurship opportunities
+            in Nellore? /
+            <span class="te-txt"
+              >నెల్లూరులో తగినంత స్థానిక ఉపాధి లేదా వ్యాపార అవకాశాలు
+              ఉన్నాయా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="employment_opportunities"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="employment_opportunities" value="No" />
+              No / <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="employment_opportunities"
+                value="Limited"
+              />
+              Limited / <span class="te-txt">పరిమితమైన</span></label
+            >
+          </div>
+        </div>
+
+        <div class="satisfaction-rating">
+          <label
+            >Rate your satisfaction with job and economic opportunities /
+            <span class="te-txt"
+              >ఉద్యోగ మరియు ఆర్థిక అవకాశాలతో మీ సంతృప్తిని రేట్ చేయండి</span
+            >:</label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="employment_satisfaction"
+                value="Very Unsatisfied"
+                required
+              />
+              Very Unsatisfied /
+              <span class="te-txt">చాలా అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="employment_satisfaction"
+                value="Unsatisfied"
+              />
+              Unsatisfied / <span class="te-txt">అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="employment_satisfaction"
+                value="Neutral"
+              />
+              Neutral / <span class="te-txt">తటస్థ</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="employment_satisfaction"
+                value="Satisfied"
+              />
+              Satisfied / <span class="te-txt">సంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="employment_satisfaction"
+                value="Very Satisfied"
+              />
+              Very Satisfied / <span class="te-txt">చాలా సంతృప్తి</span></label
+            >
+          </div>
+        </div>
+
+        <!-- 5. Accessibility -->
+        <div class="section-header">
+          🏥 5. Accessibility (Healthcare, Government Offices, Internet) /
+          <span class="te-txt">అందుబాటు</span>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Is there access to quality healthcare and emergency services near
+            your area? /
+            <span class="te-txt"
+              >మీ ప్రాంతానికి దగ్గరగా నాణ్యమైన ఆరోగ్య సంరక్షణ మరియు అత్యవసర
+              సేవలు అందుబాటులో ఉన్నాయా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="healthcare_access"
+                value="Yes"
+                required
+              />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="healthcare_access" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="healthcare_access" value="Limited" />
+              Limited / <span class="te-txt">పరిమితమైన</span></label
+            >
+          </div>
+        </div>
+
+        <div class="satisfaction-rating">
+          <label
+            >Rate your satisfaction with basic service accessibility /
+            <span class="te-txt"
+              >ప్రాథమిక సేవల అందుబాటుతో మీ సంతృప్తిని రేట్ చేయండి</span
+            >:</label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="accessibility_satisfaction"
+                value="Very Unsatisfied"
+                required
+              />
+              Very Unsatisfied /
+              <span class="te-txt">చాలా అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accessibility_satisfaction"
+                value="Unsatisfied"
+              />
+              Unsatisfied / <span class="te-txt">అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accessibility_satisfaction"
+                value="Neutral"
+              />
+              Neutral / <span class="te-txt">తటస్థ</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accessibility_satisfaction"
+                value="Satisfied"
+              />
+              Satisfied / <span class="te-txt">సంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accessibility_satisfaction"
+                value="Very Satisfied"
+              />
+              Very Satisfied / <span class="te-txt">చాలా సంతృప్తి</span></label
+            >
+          </div>
+        </div>
+
+        <!-- 6. Problem Resolving & Local Leadership -->
+        <div class="section-header">
+          🤝 6. Problem Resolving & Local Leadership /
+          <span class="te-txt">సమస్య పరిష్కారం & స్థానిక నాయకత్వం</span>
+        </div>
+
+        <div class="question-item">
+          <label
+            >Do you feel your local issues are being heard by government
+            representatives? /
+            <span class="te-txt"
+              >మీ స్థానిక సమస్యలను ప్రభుత్వ ప్రతినిధులు వింటున్నారని మీరు
+              భావిస్తున్నారా?</span
+            ></label
+          >
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="issues_heard" value="Yes" required />
+              Yes / <span class="te-txt">అవును</span></label
+            >
+            <label
+              ><input type="radio" name="issues_heard" value="No" /> No /
+              <span class="te-txt">లేదు</span></label
+            >
+            <label
+              ><input type="radio" name="issues_heard" value="Sometimes" />
+              Sometimes / <span class="te-txt">కొన్నిసార్లు</span></label
+            >
+          </div>
+        </div>
+
+        <div class="satisfaction-rating">
+          <label
+            >Rate your satisfaction with leadership responsiveness /
+            <span class="te-txt"
+              >నాయకత్వ స్పందనతో మీ సంతృప్తిని రేట్ చేయండి</span
+            >:</label
+          >
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                name="leadership_satisfaction"
+                value="Very Unsatisfied"
+                required
+              />
+              Very Unsatisfied /
+              <span class="te-txt">చాలా అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="leadership_satisfaction"
+                value="Unsatisfied"
+              />
+              Unsatisfied / <span class="te-txt">అసంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="leadership_satisfaction"
+                value="Neutral"
+              />
+              Neutral / <span class="te-txt">తటస్థ</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="leadership_satisfaction"
+                value="Satisfied"
+              />
+              Satisfied / <span class="te-txt">సంతృప్తి</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="leadership_satisfaction"
+                value="Very Satisfied"
+              />
+              Very Satisfied / <span class="te-txt">చాలా సంతృప్తి</span></label
+            >
+          </div>
+        </div>
+
+        <!-- Final Question -->
+        <div class="final-question">
+          <h4>✅ Final Question / <span class="te-txt">చివరి ప్రశ్న</span></h4>
+          <label for="priority_issue">
+            Which 1 issue do you want your MP to prioritize in the next 6
+            months? (Write briefly) /
+            <span class="te-txt"
+              >రాబోయే 6 నెలల్లో మీ MP ఏ ఒక్క సమస్యకు ప్రాధాన్యత ఇవ్వాలని మీరు
+              కోరుకుంటున్నారు? (క్లుప్తంగా రాయండి)</span
+            >
+          </label>
+          <textarea
+            name="priority_issue"
+            id="priority_issue"
+            rows="3"
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">
+          Submit Form and Vote for KSR /
+          <span class="te-txt">నా అభిప్రాయాన్ని సమర్పించండి </span>
+        </button>
+        <button type="reset">Reset / <span class="te-txt">రీసెట్</span></button>
+      </form>
+    </div>
+
+    <!-- Footer (same as your other pages) -->
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2 data-i18n="about_us">About Us</h2>
+                <p data-i18n="about_us_desc">
+                  We are committed to making a positive impact on society
+                  through our objectives and initiatives.
+                </p>
+                <ul class="social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/kotamreddysridharreddy"
+                      target="_blank"
+                      ><i class="icofont-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/kotamreddysridharreddy"
+                      target="_blank"
+                      ><i class="icofont-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/KotamreddySridhar" target="_blank"
+                      ><i class="icofont-twitter"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="copyright-content">
+                <p data-i18n="copyright">
+                  © Copyright 2024 | All Rights Reserved by Kotamreddy Sridhar
+                  Reddy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/pagescroll.min.js"></script>
+    <script src="js/active.js"></script>
+    <script type="module" src="js/supabaseClient.js"></script>
+    <script type="module" src="js/citizen-feedback.js"></script>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          nav.classList.toggle("active");
+        });
+    </script>
+
+    <!-- Language popup (same as other pages) -->
+    <div
+      id="language-popup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fffbe6;
+          padding: 32px 24px;
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+          text-align: center;
+          max-width: 90vw;
+        "
+      >
+        <h2 style="margin-bottom: 18px">
+          Please select your language<br /><span style="font-size: 1.1em"
+            >దయచేసి మీ భాషను ఎంచుకోండి</span
+          >
+        </h2>
+        <button
+          id="lang-en"
+          style="
+            margin: 10px 18px 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          English
+        </button>
+        <button
+          id="lang-te"
+          style="
+            margin: 10px 0 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          తెలుగు
+        </button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { translations } from "./js/translations.js";
+
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
+      });
+
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
+    </script>
+  </body>
+</html>

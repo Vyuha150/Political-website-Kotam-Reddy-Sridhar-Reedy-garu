@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB Data Visualization</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    .chart-container {
+      width: 33%;
+      display: inline-block;
+      margin: 10px;
+    }
+    #map {
+      height: 400px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-4">MongoDB Data Visualization</h1>
+
+    <!-- Row for charts -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="chart-container">
+          <canvas id="genderChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <canvas id="localityChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <canvas id="problemCategoryChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map container -->
+    <div id="map"></div>
+  </div>
+
+  <!-- Bootstrap JS and Leaflet JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Custom script for fetching data and rendering charts -->
+  <script src="script.js"></script>
+</body>
+</html>

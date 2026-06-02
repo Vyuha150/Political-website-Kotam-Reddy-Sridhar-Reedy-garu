@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Citizen Complaint Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+        <img
+          src="img/kotam_logo.png"
+          alt="TDP"
+          class="logo"
+          style="width: 100px; height: 100px"
+        />
+        <img
+          src="img/SRI-NARA-CHANDRA-BABU-NAIDU-modified.png"
+          alt="Chandrababu Naidu"
+          class="logo"
+          style="width: 100px; height: 100px"
+        />
+        <img
+          src="img/Pawan K-modified.png"
+          alt="Pawan Kalyan"
+          class="logo"
+          style="width: 100px; height: 100px"
+        />
+        <img
+          src="img/moditopbar.jpg"
+          alt="Modi"
+          class="logo"
+          style="width: 100px; height: 100px"
+        />
+        <img
+          src="img/Picture_of_nara_lokesh.png"
+          alt="Lokesh"
+          class="logo"
+          style="width: 100px; height: 100px"
+        />
+      </div>
+      <h1 class="text-center animated fadeInDown">Citizen Complaint Form</h1>
+      <form id="complaintForm" class="animated fadeInUp">
+        <!-- Personal Data Section -->
+        <div id="personalData" class="form-section">
+          <h2 class="section-heading animated fadeInLeft">Personal Data</h2>
+          <div class="form-group">
+            <label for="fullName"
+              ><strong>Full Name</strong> / పూర్తి పేరు</label
+            >
+            <input type="text" class="form-control" id="fullName" required />
+          </div>
+          <div class="form-group">
+            <label for="age"><strong>Age</strong> / వయసు</label>
+            <input type="number" class="form-control" id="age" required />
+          </div>
+          <div class="form-group">
+            <label for="gender"><strong>Gender</strong> / లింగం</label>
+            <select class="form-control" id="gender" required>
+              <option>Male / పురుషుడు</option>
+              <option>Female / స్త్రీ</option>
+              <option>Other / ఇతర</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber"
+              ><strong>Phone Number</strong> / ఫోన్ నంబర్</label
+            >
+            <input type="tel" class="form-control" id="phoneNumber" required />
+          </div>
+          <div class="form-group">
+            <label for="email"
+              ><strong>Email Address</strong> / ఇమెయిల్ చిరునామా</label
+            >
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="address"><strong>Address</strong> / చిరునామా</label>
+            <textarea
+              class="form-control"
+              id="address"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="contactMode"
+              ><strong>Preferred Mode of Contact</strong> / సంప్రదించడానికి
+              ఇష్టమైన విధానం</label
+            >
+            <select class="form-control" id="contactMode" required>
+              <option>Phone / ఫోన్</option>
+              <option>Email / ఇమెయిల్</option>
+              <option>SMS / ఎస్‌ఎమ్‌ఎస్</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Problem Section -->
+        <div id="problemData" class="form-section">
+          <h2 class="section-heading animated fadeInRight">Problem</h2>
+          <div class="form-group">
+            <label for="problemCategory"
+              ><strong>Select Problem Category</strong> / సమస్య వర్గం
+              ఎంపిక</label
+            >
+            <select class="form-control" id="problemCategory" required>
+              <option>Education / విద్య</option>
+              <option>Health / ఆరోగ్యం</option>
+              <option>Infrastructure / మౌలిక వసతులు</option>
+              <option>Disputes / వివాదాలు</option>
+              <option>Criminal Attacks / క్రిమినల్ దాడులు</option>
+              <option>Municipal Issues / పురపాలక సమస్యలు</option>
+              <option>Water Supply / నీటి సరఫరా</option>
+              <option>Electricity / విద్యుత్</option>
+              <option>Roads and Transportation / రహదారులు మరియు రవాణా</option>
+              <option>Sanitation / పారిశుధ్యం</option>
+              <option>Employment / ఉపాధి</option>
+              <option>Agriculture / వ్యవసాయం</option>
+              <option>Housing / గృహవసతి</option>
+              <option>Welfare Schemes / సంక్షేమ పథకాలు</option>
+              <option>Others / ఇతర</option>
+            </select>
+          </div>
+
+          <!-- Location Details -->
+          <div class="form-group">
+            <label for="constituency"
+              ><strong>Constituency</strong> / నియోజకవర్గం</label
+            >
+            <select
+              class="form-control"
+              name="constituency"
+              id="constituency"
+              required
+            >
+              <option value="" disabled selected>
+                Select Constituency / నియోజకవర్గం ఎంచుకోండి
+              </option>
+              <option value="Nellore City">Nellore City / నెల్లూరు సిటీ</option>
+              <option value="Nellore Rural">
+                Nellore Rural / నెల్లూరు రూరల్
+              </option>
+              <option value="Kovur">Kovur / కోవూరు</option>
+              <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
+              <option value="Kavali">Kavali / కావలి</option>
+              <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
+              <option value="Sarvepalli">Sarvepalli / సర్వేపల్లి</option>
+              <option value="Sullurpet">Sullurpet / సుల్లూరుపేట</option>
+              <option value="Gudur">Gudur / గూడూరు</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mandal"><strong>Mandal</strong> / మండలం</label>
+            <select
+              class="form-control"
+              name="mandal"
+              id="mandalVillage"
+              required
+            >
+              <option value="" disabled selected>
+                Select Mandal / మండలం ఎంచుకోండి
+              </option>
+              <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
+              <option value="Ananthasagaram">Ananthasagaram / అనంతసాగరం</option>
+              <option value="Bogole">Bogole / బోగోలు</option>
+              <option value="Buchireddypalem">
+                Buchireddypalem / బుచ్చిరెడ్డిపాలెం
+              </option>
+              <option value="Chejerla">Chejerla / చేజర్ల</option>
+              <option value="Dagadarthi">Dagadarthi / దగదర్తి</option>
+              <option value="Duttalur">Duttalur / దుత్తలూరు</option>
+              <option value="Indukurpet">Indukurpet / ఇందుకూరుపేట</option>
+              <option value="Jaladanki">Jaladanki / జలదంకి</option>
+              <option value="Kaligiri">Kaligiri / కలిగిరి</option>
+              <option value="Kavali">Kavali / కావలి</option>
+              <option value="Kodavalur">Kodavalur / కొడవలూరు</option>
+              <option value="Kondapuram">Kondapuram / కొండపురం</option>
+              <option value="Kovur">Kovur / కోవూరు</option>
+              <option value="Marripadu">Marripadu / మరిపాడు</option>
+              <option value="Muthukur">Muthukur / ముత్తుకూరు</option>
+              <option value="Nellore Rural">
+                Nellore Rural / నెల్లూరు రూరల్
+              </option>
+              <option value="Nellore Urban">
+                Nellore Urban / నెల్లూరు అర్బన్
+              </option>
+              <option value="Podalakur">Podalakur / పొదలకూరు</option>
+              <option value="Rapur">Rapur / రాపూరు</option>
+              <option value="Saidapuram">Saidapuram / సైదాపురం</option>
+              <option value="Sangam">Sangam / సంగం</option>
+              <option value="SPSR Nellore">
+                SPSR Nellore / ఎస్పీఎస్ఆర్ నెల్లూరు
+              </option>
+              <option value="Thotapalligudur">
+                Thotapalligudur / తోటపల్లిగూడూరు
+              </option>
+              <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
+              <option value="Venkatachalam">Venkatachalam / వెంకటాచలం</option>
+              <option value="Vidavalur">Vidavalur / విడవలూరు</option>
+              <option value="Vinjamur">Vinjamur / విన్జమూరు</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="location"
+              ><strong>Exact Location or Landmark</strong> / ఖచ్చితమైన స్థలం
+              లేదా ల్యాండ్‌మార్క్</label
+            >
+            <input type="text" class="form-control" id="location" required />
+          </div>
+
+          <!-- Problem Description -->
+          <div class="form-group">
+            <label for="problemDescription"
+              ><strong>Detailed Description of the Problem</strong> / సమస్య
+              యొక్క వివరణ</label
+            >
+            <textarea
+              class="form-control"
+              id="problemDescription"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="supportingDocuments"
+              ><strong>Upload Supporting Documents or Images</strong> / మద్దతు
+              పత్రాలు లేదా చిత్రాలు అప్‌లోడ్ చేయండి</label
+            >
+            <input
+              type="file"
+              class="form-control-file"
+              id="supportingDocuments"
+            />
+          </div>
+          <div class="form-group">
+            <label for="problemDate"
+              ><strong>Date When the Problem Occurred</strong> / సమస్య ఏర్పడిన
+              తేదీ</label
+            >
+            <input type="date" class="form-control" id="problemDate" required />
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-group">
+            <label for="reportedBefore"
+              ><strong>Have you reported this problem before?</strong> / మీరు ఈ
+              సమస్యను మునుపు నివేదించారా?</label
+            >
+            <select class="form-control" id="reportedBefore" required>
+              <option>Yes / అవును</option>
+              <option>No / లేదు</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="reportDetails"
+              ><strong>If yes, please provide details</strong> / అవును అయితే,
+              దయచేసి వివరాలు అందించండి</label
+            >
+            <textarea
+              class="form-control"
+              id="reportDetails"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="specificAuthority"
+              ><strong
+                >Any specific authority you want to address this complaint
+                to?</strong
+              >
+              / ఈ ఫిర్యాదును పంపించడానికి ఏదైనా నిర్దిష్ట అధికారి ఉందా?</label
+            >
+            <input type="text" class="form-control" id="specificAuthority" />
+          </div>
+          <div class="form-group">
+            <label for="similarIssues"
+              ><strong
+                >Are you aware of any similar issues faced by others in your
+                area?</strong
+              >
+              / మీ ప్రాంతంలో ఇతరులు ఎదుర్కొన్న ఏవైనా ఇలాంటి సమస్యలు మీకు
+              తెలుసా?</label
+            >
+            <select class="form-control" id="similarIssues" required>
+              <option>Yes / అవును</option>
+              <option>No / లేదు</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="similarIssuesDetails"
+              ><strong>If yes, please provide details</strong> / అవును అయితే,
+              దయచేసి వివరాలు అందించండి</label
+            >
+            <textarea
+              class="form-control"
+              id="similarIssuesDetails"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Authentication Section -->
+        <div id="authentication" class="form-section">
+          <h2 class="section-heading animated fadeInLeft">Authentication</h2>
+          <div class="form-group">
+            <label for="authName"
+              ><strong>Your Full Name for Authentication</strong> / ధృవీకరణకు మీ
+              పూర్తి పేరు</label
+            >
+            <input type="text" class="form-control" id="authName" required />
+          </div>
+          <div class="form-group">
+            <label for="authPhoneNumber"
+              ><strong>Your Phone Number for Authentication</strong> / ధృవీకరణకు
+              మీ ఫోన్ నంబర్</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="authPhoneNumber"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="authEmail"
+              ><strong>Your Email Address for Authentication</strong> /
+              ధృవీకరణకు మీ ఇమెయిల్ చిరునామా</label
+            >
+            <input type="email" class="form-control" id="authEmail" required />
+          </div>
+          <div class="form-group">
+            <label for="leaderPhoto"
+              ><strong>Leader's Photo for Acknowledgment</strong> / స్వీకారం
+              కోసం నేత ఛాయ</label
+            >
+            <input
+              type="file"
+              class="form-control-file"
+              id="leaderPhoto"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary animated fadeInUp">
+            Submit / సమర్పించండి
+          </button>
+        </div>
+      </form>
+
+      <!-- Success Message -->
+      <div
+        id="successMessage"
+        class="alert alert-success mt-3 text-center"
+        style="display: none"
+      >
+        Your complaint has been submitted successfully! / మీ ఫిర్యాదు విజయవంతంగా
+        సమర్పించబడింది!
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="js/supabaseClient.js"></script>
+    <script type="module" src="js/complaint.js"></script>
+  </body>
+</html>

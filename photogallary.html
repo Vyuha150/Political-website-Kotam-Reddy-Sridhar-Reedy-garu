@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Site keywords here" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>Telugu Desam Party (TDP)</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/kotam_logo.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+                          href="https://www.facebook.com/kotamreddysridharreddy"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css" />
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add this to your <style> section or in style.css for gallery enhancements */
+      .portfolio-slider .single-pf {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        margin: 0 6px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        min-height: 220px;
+        max-height: 220px;
+        height: 220px;
+        border: 2px solid yellow;
+      }
+
+      .portfolio-slider .single-pf:hover {
+        transform: scale(1.04);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .portfolio-slider .single-pf img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+        background: #f6f6f6;
+        transition: box-shadow 0.2s;
+      }
+
+      .section-title h2 {
+        font-size: 2.2em;
+        color: #222;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 0.5em;
+        text-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
+      }
+
+      .portfolio.section {
+        padding: 30px 0 10px 0 !important;
+        background: linear-gradient(120deg, #fffbe7 0%, #f9f9f9 100%);
+        border-radius: 18px;
+        margin-bottom: 0;
+      }
+
+      .owl-carousel.portfolio-slider {
+        margin-bottom: 18px;
+      }
+
+      @media (max-width: 991px) {
+        /* .portfolio-slider .single-pf,
+        .portfolio-slider .single-pf img {
+          height: 160px;
+          min-height: 160px;
+          max-height: 160px;
+        }
+        .portfolio-slider .single-pf img {
+          height: 140px;
+        } */
+      }
+
+      @media (max-width: 576px) {
+        /* .portfolio-slider .single-pf,
+        .portfolio-slider .single-pf img {
+          height: 120px;
+          min-height: 120px;
+          max-height: 120px;
+        }
+        .portfolio-slider .single-pf img {
+          height: 100px;
+        } */
+        .section-title h2 {
+          font-size: 1.3em;
+        }
+        .portfolio.section {
+          padding: 10px 0 5px 0 !important;
+        }
+      }
+
+      .recent-activities {
+        background: #fffbe7;
+        border-radius: 14px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        padding: 30px 24px;
+        margin-bottom: 30px;
+        transition: box-shadow 0.2s;
+      }
+      .recent-activities:hover {
+        box-shadow: 0 6px 24px rgba(255, 215, 0, 0.15);
+      }
+      .recent-activities ol li {
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px dashed #ffe066;
+      }
+      .recent-activities ol li:last-child {
+        border-bottom: none;
+      }
+      .recent-activities a {
+        color: #e1306c;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+      .recent-activities a:hover {
+        color: #ffb700;
+        text-decoration: none;
+      }
+    </style>
+    <div class="header">
+      <div class="mobile-header">
+        <div class="left-images">
+          <img src="img/kotam_logo.png" alt="Kotam logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="outmotives.html" data-i18n="our_initiatives"
+          >Our Initiatives</a
+        >
+        <a href="photogallary.html" data-i18n="media">Media</a>
+        <a href="citizen-feedback.html" data-i18n="contact_us">Contact Us</a>
+        <a href="blog-single.html" data-i18n="about">About</a>
+        <a href="grievances.html" data-i18n="grievances">Grievances</a>
+        <div class="dropdown-nav">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            onclick="return false;"
+            data-i18n="join"
+            >Join</a
+          >
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
+              >Yuva Shakthi Member</a
+            >
+            <a
+              href="scheme-eligibility.html"
+              data-i18n="schemes_eligibility_form"
+              >Schemes & Eligibility Form</a
+            >
+            <a href="volunteer.html" data-i18n="join_volunteer"
+              >Join as a Volunteer</a
+            >
+            <a
+              href="mahila-shakti-grievance.html"
+              data-i18n="mahila_shakti_grievance"
+              >Mahila Shakti Grievance</a
+            >
+            <a
+              href="social-media-grievance.html"
+              data-i18n="social_media_warriors"
+              >Social Media Warriors</a
+            >
+          </div>
+        </div>
+        <a href="http://localhost:3000/signin" data-i18n="signin">Signin</a>
+      </nav>
+      <div class="right-image">
+        <img
+          src="img/header/alliance3.png"
+          alt="Alliance"
+          style="width: 60px; height: 40px"
+        />
+        <img src="img/header/srntr.png" alt="Sr NTR" />
+        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+        <img src="img/header/modi.png" alt="Modi" />
+        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+        <img src="img/header/lokesh.png" alt="Lokesh" />
+        <img src="/public/ksr4.png" alt="KSR" />
+      </div>
+    </div>
+    <!--/ End Header Inner -->
+
+    <!-- Add this Recent Activities section just above the gallery section -->
+
+    <section class="portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2 data-i18n="photo_gallery"></h2>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <div class="owl-carousel portfolio-slider">
+              <div class="single-pf">
+                <img src="/public/index1.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="/public/index2.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index3.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index4.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index5.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index6.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index7.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index8.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index1.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index2.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index3.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index4.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index5.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index6.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index7.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index8.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index9.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index1.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index2.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index3.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/index4.png" alt="#" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <div class="owl-carousel portfolio-slider">
+              <div class="single-pf">
+                <img src="public/15.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/16.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/17.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/18.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/19.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/20.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/7.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/ksr.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/10.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/11.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/12.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/13.png" alt="#" />
+              </div>
+              <div class="single-pf">
+                <img src="public/14.png" alt="#" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Update the activity cards grid for better responsiveness and equal sizing -->
+
+    <section class="portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title" style="margin-bottom: 0">
+              <h2 data-i18n="portfolio_activities"></h2>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card-grid">
+          <!-- Card 1 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity1_title"></h4>
+              <p data-i18n="activity1_desc"></p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity2_title"></h4>
+              <p data-i18n="activity2_desc"></p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity3_title"></h4>
+              <p data-i18n="activity3_desc"></p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity4_title"></h4>
+              <p data-i18n="activity4_desc"></p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity5_title"></h4>
+              <p data-i18n="activity5_desc"></p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity6_title"></h4>
+              <p data-i18n="activity6_desc"></p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity7_title"></h4>
+              <p data-i18n="activity7_desc"></p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4 data-i18n="activity8_title"></h4>
+              <p data-i18n="activity8_desc"></p>
+            </div>
+          </div>
+          <!-- Contact Card -->
+          <div class="activity-card">
+            <div class="activity-card-inner" style="text-align: center">
+              <h4 data-i18n="activity_contact_title"></h4>
+              <a
+                href="https://www.instagram.com/ksrabhakarreddyofficial/"
+                target="_blank"
+                style="
+                  color: #e1306c;
+                  font-weight: 600;
+                  text-decoration: underline;
+                "
+              >
+                @ksrabhakarreddyofficial (Instagram)
+              </a>
+              <p
+                style="font-size: 0.98em; color: #555; margin-top: 8px"
+                data-i18n="activity_contact_desc"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Responsive grid for activity cards */
+      .activity-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+      .activity-card {
+        display: flex;
+        height: 100%;
+      }
+      .activity-card-inner {
+        background: #ffe600;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(255, 215, 0, 0.1);
+        padding: 24px 18px 18px 18px;
+        color: #222;
+        width: 100%;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: box-shadow 0.18s, transform 0.18s;
+        height: 100%;
+      }
+      .activity-card-inner h4 {
+        font-size: 1.18em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #17408b;
+      }
+      .activity-card-inner p {
+        font-size: 1em;
+        margin-bottom: 0;
+      }
+      .activity-card-inner a:hover {
+        color: #17408b;
+      }
+      .activity-card-inner:hover {
+        box-shadow: 0 8px 32px rgba(255, 215, 0, 0.18);
+        transform: translateY(-4px) scale(1.02);
+      }
+      @media (max-width: 991px) {
+        .activity-card-inner {
+          padding: 16px 10px 12px 10px;
+          min-height: 120px;
+        }
+      }
+      @media (max-width: 767px) {
+        .activity-card-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        .activity-card {
+          margin-bottom: 0;
+        }
+        .activity-card-inner {
+          padding: 12px 6px 10px 6px;
+          min-height: unset;
+        }
+      }
+    </style>
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+      <div style="justify-content: center">
+        <footer id="footer" class="footer">
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
+                >
+                  <div class="single-footer">
+                    <h2 data-i18n="about_us"></h2>
+                    <p data-i18n="about_us_desc"></p>
+                    <!-- Social -->
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/kotamreddysridharreddy"
+                          target="_blank"
+                          ><i class="icofont-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/kotamreddysridharreddy"
+                          target="_blank"
+                          ><i class="icofont-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://x.com/KotamreddySridhar" target="_blank"
+                          ><i class="icofont-twitter"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <!-- End Social -->
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
+                >
+                  <div class="single-footer f-link">
+                    <h2 data-i18n="quick_links"></h2>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <ul>
+                          <li>
+                            <a href="index.html" data-i18n="home"></a>
+                          </li>
+                          <li>
+                            <a
+                              href="contact.html"
+                              data-i18n="about_us_link"
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="outmotives.html" data-i18n="motive"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
+                >
+                  <div class="single-footer">
+                    <h2 data-i18n="newsletter"></h2>
+                    <p data-i18n="newsletter_desc"></p>
+                    <form
+                      action="mail/mail.php"
+                      method="get"
+                      target="_blank"
+                      class="newsletter-inner"
+                    >
+                      <input
+                        name="email"
+                        placeholder="Email Address"
+                        class="common-input"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your email address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="button">
+                        <i class="icofont icofont-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ End Footer Top -->
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="copyright-content">
+                    <p data-i18n="copyright"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ End Copyright -->
+        </footer>
+      </div>
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- jquery Min JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <!-- jquery Ui JS -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="js/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Steller JS -->
+    <script src="js/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <script>
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+    </script>
+    <div
+      id="language-popup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fffbe6;
+          padding: 32px 24px;
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+          text-align: center;
+          max-width: 90vw;
+        "
+      >
+        <h2 style="margin-bottom: 18px" data-i18n="select_language_popup"></h2>
+        <button
+          id="lang-en"
+          style="
+            margin: 10px 18px 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          English
+        </button>
+        <button
+          id="lang-te"
+          style="
+            margin: 10px 0 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          తెలుగు
+        </button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { translations } from "./js/translations.js";
+
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      // Show popup only if language not set
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
+      });
+
+      // Handle language selection
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
+    </script>
+  </head>
+</html>

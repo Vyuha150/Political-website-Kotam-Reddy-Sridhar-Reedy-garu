@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Complaint Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:rgb(232, 221, 15);max-width: 900px; margin: auto;">
+     <div class="container mt-5" style="border:2px solid black; background-color:rgba(237, 227, 40, 0.7);">
+        <br>
+        <div class="text-center mb-4">
+            <img src="cbn copy.png" alt="Chandrababu Naidu" style="width:80px;height:80px;">
+            <img src="psk.png" alt="Pawan Kalyan" style="width:80px;height:80px;">
+            <img src="modi.png" alt="Modi" style="width:80px;height:80px;">
+            <img src="lokesh.png" alt="Lokesh" style="width:80px;height:80px;">
+        </div>
+        <h1 class="text-center animated fadeInDown">Citizen Complaint Form</h1>
+        <br>
+         <form action="/submit-form" method="POST">
+            <label for="name">Name / పేరు:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="age">Age / వయసు:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            
+            <label for="gender">Gender / లింగం:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male / పురుషుడు</option>
+                <option value="Female">Female / స్త్రీ</option>
+                <option value="Other">Other / ఇతర</option>
+            </select><br><br>
+            
+            <label for="locality">Locality / ప్రాంతం:</label>
+            <select id="locality" name="locality" required>
+                <option value="Eluru">Eluru / ఏలూరు</option>
+                <option value="Denduluru">Denduluru / డెందులూరు</option>
+                <option value="Unguturu">Unguturu / ఉంగుటూరు</option>
+                <option value="Polavaram">Polavaram / పోలవరం</option>
+                <option value="Chintalapudi">Chintalapudi / చింతలపూడి</option>
+                <option value="Nuzvid">Nuzvid / నూజివీడు</option>
+                <option value="Gopalapuram">Gopalapuram / గోపాలపురం</option>
+            </select><br><br>
+            
+            <label for="problemCategory">Problem Category / సమస్య వర్గం:</label>
+            <select id="problemCategory" name="problemCategory" required>
+                <option value="Disputes">Disputes / వివాదాలు</option>
+                <option value="Criminal Attacks">Criminal Attacks / క్రిమినల్ దాడులు</option>
+                <option value="Municipal Issues">Municipal Issues / పురపాలక సమస్యలు</option>
+                <option value="Water Supply">Water Supply / నీటి సరఫరా</option>
+                <option value="Electricity">Electricity / విద్యుత్</option>
+                <option value="Roads and Transportation">Roads and Transportation / రహదారులు మరియు రవాణా</option>
+                <option value="Sanitation">Sanitation / పారిశుధ్యం</option>
+                <option value="Employment">Employment / ఉపాధి</option>
+                <option value="Agriculture">Agriculture / వ్యవసాయం</option>
+                <option value="Housing">Housing / గృహవసతి</option>
+                <option value="Welfare Schemes">Welfare Schemes / సంక్షేమ పథకాలు</option>
+                <option value="Others">Others / ఇతర</option>
+            </select><br><br>
+            
+            <label for="problem">Problem / సమస్య:</label>
+            <textarea id="problem" name="problem" rows="4" required></textarea><br><br>
+            
+            <label for="complaintHistory">Complaint History / ఫిర్యాదు చరిత్ర:</label>
+            <input type="radio" id="complaintHistoryYes" name="complaintHistory" value="true" required>
+            <label for="complaintHistoryYes">Yes / అవును</label>
+            <input type="radio" id="complaintHistoryNo" name="complaintHistory" value="false" required>
+            <label for="complaintHistoryNo">No / కాదు</label><br><br>
+            
+            <label for="phoneNumber">Phone Number / ఫోన్ నంబర్:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+            
+            <label for="email">Email / ఇమెయిల్:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="address">Address / చిరునామా:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Submit / సమర్పించు" style="text-align: center;">
+        </form>
+        
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
