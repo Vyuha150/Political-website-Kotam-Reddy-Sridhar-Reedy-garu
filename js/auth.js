@@ -2,7 +2,7 @@ import { supabase } from "./supabaseClient.js";
 
 // Local admin panel URL for development.
 // Update this to your deployed admin app URL when you go to production.
-const ADMIN_PANEL_URL = "http://localhost:3000/signin";
+const ADMIN_PANEL_URL = "https://admin-panel-political.vercel.app/signin";
 
 document.addEventListener("DOMContentLoaded", () => {
   // SIGN UP LOGIC
