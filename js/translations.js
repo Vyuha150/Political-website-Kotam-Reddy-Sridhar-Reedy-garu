@@ -56,24 +56,24 @@ export const translations = {
     about_us_desc:
       "We are committed to making a positive impact on society through our objectives and initiatives. Join us in our mission for a better tomorrow.",
     blog_title:
-      "Kotamreddy Sridhar Reddy: Public Servant and Regional Leader",
+      "Kotamreddy Sridhar Reddy: Three-Time MLA and Dedicated Leader",
     ksr_name: "Kotamreddy Sridhar Reddy",
     blog_date: "12 Jun 2024",
-    votes: "",
-    majority: "",
+    votes: "1,14,484 Votes",
+    majority: "34,480 Majority",
     blog_para1:
-      "Kotamreddy Sridhar Reddy (born 26 September 1965) is an Indian politician from Nellore, Andhra Pradesh. He has served as the Member of the Legislative Assembly (MLA) for Nellore Rural since 2014.",
+      "Kotamreddy Sridhar Reddy (born 26 September 1965) is an Indian politician from Nellore, Andhra Pradesh. He is a Member of the Legislative Assembly (MLA) of Andhra Pradesh, representing the Nellore Rural constituency.",
     blog_para2:
-      "He has been elected to the Andhra Pradesh Legislative Assembly multiple times and is an active regional leader focused on constituency development and public welfare.",
+      "He achieved a historic hat-trick victory in the 2024 Andhra Pradesh Assembly elections. Contesting on the Telugu Desam Party (TDP) ticket, he secured a decisive win with 1,14,484 votes and a majority of 34,480 votes, defeating his opponent Adala Prabhakara Reddy.",
     blog_para3:
-      "With a commitment to public service and local development, Kotamreddy Sridhar Reddy has been involved in initiatives related to education, healthcare access, infrastructure improvements, and community welfare across his constituency.",
+      "Reddy's political career began as a student leader in V. R. College, Nellore, where he became the College President in 1985. Over the decades, he has held key leadership positions, including District Youth General Secretary in 1987 and State Youth General Secretary in 1989.",
     blog_para4:
-      "His work includes supporting relief efforts during natural calamities and facilitating programs aimed at improving livelihoods and basic services for residents of Nellore Rural.",
+      "He was first elected as an MLA in 2014 from Nellore Rural. He successfully retained the seat in 2019. In early 2023, he joined the Telugu Desam Party (TDP), and went on to win the constituency for the third consecutive time in 2024.",
     blog_para5:
-      "Kotamreddy Sridhar Reddy continues to engage with constituents and stakeholders to promote regional development, transparency, and inclusive governance.",
+      "Kotamreddy Sridhar Reddy remains deeply committed to public service, community welfare, infrastructure development, and representing the voice of the people of Nellore Rural in the Legislative Assembly.",
     early_life_title: "Early Life and Education",
     early_life_para:
-      "Kotamreddy Sridhar Reddy was born in Nellore district and completed his graduation in commerce at V. R. College, Nellore. He began his public life as a student leader and later entered electoral politics.",
+      "Kotamreddy Sridhar Reddy was born to Kotamreddy Bapi Reddy and Saralamma in Nellore. He completed his graduation in commerce (B.Com) from V. R. College, Nellore. He is married to Sujitha, and they have two daughters, Lakshmi Haindhavi and Sai Vaishnavi.",
     facebook: "Facebook",
     twitter: "Twitter",
     personal_details: "Personal details",
@@ -82,7 +82,7 @@ export const translations = {
     political_party: "Political party:",
     political_party_name: "Telugu Desam Party (2023–present)",
     parents: "Parents:",
-    parents_details: "Not publicly documented",
+    parents_details: "Kotamreddy Bapi Reddy and Saralamma",
     education: "Education:",
     education_details:
       "Bachelor of Commerce (V. R. College, Nellore)",
@@ -144,7 +144,7 @@ export const translations = {
     portfolio_activities: "Portfolio of Activities – Kotamreddy Sridhar Reddy",
     activity1_title: "Political Leadership & Governance",
     activity1_desc:
-      "<b>Elected Member of Parliament (Nellore), Member, Committee on Public Undertakings</b><br />Demonstrates active legislative engagement, overseeing public sector enterprises and contributing to policy discussions at the national level.",
+      "<b>Elected Member of Legislative Assembly (Nellore Rural)</b><br />Demonstrates active legislative engagement, raise constituency issues and contributing to policy discussions at the state level.",
     activity2_title: "Organizing Employment Opportunities",
     activity2_desc:
       "<b>Event: Mega Job Fair, Nellore | Organizer: KSR Foundation</b><br />Connected job seekers with employers and skill resources. Hundreds registered for interviews; new campus-to-corporate linkages established.",
@@ -172,7 +172,7 @@ export const translations = {
     privacy_policy_title: "Privacy Policy",
     privacy_policy_meta: `<div><strong>Effective Date:</strong> 05-06-2025</div>
   <div><strong>Last Updated:</strong> 10-06-2025</div>
-  <div><strong>Issued By:</strong> Office of Sri Kotamreddy Sridhar Reddy, Member of Parliament (Rajya Sabha), Nellore, Andhra Pradesh</div>`,
+  <div><strong>Issued By:</strong> Office of Sri Kotamreddy Sridhar Reddy, Member of Legislative Assembly (MLA), Nellore Rural, Andhra Pradesh</div>`,
     privacy_intro_title: "1. Introduction",
     privacy_intro_para1:
       "Your privacy is of paramount importance to us. This Privacy Policy outlines the nature of personal data we collect, the purposes for which it is collected, the safeguards we employ to protect it, and your rights with respect to that data. We are committed to maintaining the confidentiality and integrity of all information entrusted to us in the course of providing public services, governance, and administrative support.",
@@ -249,7 +249,7 @@ export const translations = {
     privacy_retention_para:
       "We retain personal data only for as long as necessary to fulfill the intended purposes outlined in this policy or as required by applicable laws and regulations. Data that is no longer required is securely deleted or anonymized.",
     privacy_contact_title: "10. Contact Information",
-    privacy_contact_info: `<strong>Organization:</strong> Office of Sri Kotamreddy Sridhar Reddy, Nellore<br />
+    privacy_contact_info: `<strong>Organization:</strong> Office of Sri Kotamreddy Sridhar Reddy, Nellore Rural<br />
   <strong>Email:</strong> <a href="mailto:contact@kotamreddysridharreddy.in">contact@kotamreddysridharreddy.in</a><br />
   <strong>Phone:</strong> <a href="tel:+919000000000">+91 90000 00000</a>`,
     privacy_updates_title: "11. Policy Updates",
@@ -312,41 +312,41 @@ export const translations = {
       "తెలంగాణలో TDP మళ్లీ పాత గౌరవాన్ని పొందుతుంది, పార్టీ పునఃవ్యవస్థీకరణ త్వరలో: చంద్రబాబు నాయుడు గారు",
     info_card3_title: "ఇటీవలి విజయం",
     info_card3_desc:
-      "నెల్లూరు ఎన్నిక ఫలితాలు 2024: వేమిరెడ్డి ప్రభాకర్ రెడ్డి గెలుపొందారు",
+      "నెల్లూరు ఎన్నిక ఫలితాలు 2024: నెల్లూరు రూరల్ నుండి కోటంరెడ్డి శ్రీధర్ రెడ్డి గెలుపొందారు",
     about_us: "మా గురించి",
     about_us_desc:
       "సమాజంపై సానుకూల ప్రభావాన్ని చూపించడంలో మా లక్ష్యాలు మరియు కార్యక్రమాల ద్వారా మేము కట్టుబడి ఉన్నాము. మెరుగైన రేపటి కోసం మా మిషన్‌లో మాతో చేరండి.",
     blog_title:
-      "వేమిరెడ్డి ప్రభాకర్ రెడ్డి: సమగ్ర అభివృద్ధికి కట్టుబడిన పార్లమెంటేరియన్",
-    ksr_name: "వేమిరెడ్డి ప్రభాకర్ రెడ్డి",
+      "కోటంరెడ్డి శ్రీధర్ రెడ్డి: మూడు సార్లు ఎమ్మెల్యేగా ఎన్నికైన నిబద్ధత గల నాయకుడు",
+    ksr_name: "కోటంరెడ్డి శ్రీధర్ రెడ్డి",
     blog_date: "12 జూన్ 2024",
-    votes: "7,66,202 ఓట్లు",
-    majority: "2,45,902 మెజారిటీ",
+    votes: "1,14,484 ఓట్లు",
+    majority: "34,480 మెజారిటీ",
     blog_para1:
-      "అనుభవజ్ఞుడైన మరియు డైనమిక్ నాయకుడు వేమిరెడ్డి ప్రభాకర్ రెడ్డి 2024 సాధారణ ఎన్నికల్లో నెల్లూరు లోక్‌సభ నియోజకవర్గం నుండి తెలుగు దేశం పార్టీ (TDP) తరఫున సభ్యుడిగా ఎన్నికయ్యారు.",
+      "కోటంరెడ్డి శ్రీధర్ రెడ్డి (జననం 26 సెప్టెంబర్ 1965) నెల్లూరుకు చెందిన ఒక భారతీయ రాజకీయ నాయకుడు. ఆయన నెల్లూరు రూరల్ నియోజకవర్గం నుండి ఆంధ్రప్రదేశ్ శాసనసభ సభ్యుడిగా (ఎమ్మెల్యే) సేవలు అందిస్తున్నారు.",
     blog_para2:
-      "అతను 2,45,902 ఓట్ల మెజారిటీతో ఘన విజయం సాధించారు. ఇది నెల్లూరు ప్రజలు అతనిపై ఉంచిన విశ్వాసాన్ని సూచిస్తుంది. ఈ చారిత్రాత్మక విజయం, గతంలో ప్రతిపక్ష బలమైన ప్రాంతంగా ఉన్న నెల్లూరులో రాజకీయ మార్పును సూచిస్తుంది.",
+      "2024 ఆంధ్రప్రదేశ్ అసెంబ్లీ ఎన్నికలలో ఆయన చారిత్రాత్మక హ్యాట్రిక్ విజయాన్ని సాధించారు. తెలుగుదేశం పార్టీ (TDP) తరపున పోటీ చేసిన ఆయన, 1,14,484 ఓట్లు సాధించి 34,480 ఓట్ల మెజారిటీతో ప్రత్యర్థి అడాల ప్రభాకర్ రెడ్డిపై ఘన విజయం సాధించారు.",
     blog_para3:
-      "ప్రజాసేవ మరియు సమగ్ర అభివృద్ధికి కట్టుబడి ఉన్న వేమిరెడ్డి ప్రభాకర్ రెడ్డి తన సంక్షేమ కార్యక్రమాల ద్వారా సామాజిక సేవలో ముందుండారు. KSR ఫౌండేషన్ వ్యవస్థాపకుడిగా, విద్య, మహిళా సాధికారత, ఆరోగ్య సంరక్షణ, వ్యవసాయ అభివృద్ధిలో ఆయన చురుకుగా పాల్గొన్నారు.\n\nఫౌండేషన్ ద్వారా ఆయన చేపట్టిన కార్యక్రమాలు:\nగ్రామీణ ప్రాంతాల్లో పాఠశాలల నిర్మాణం మరియు పునరుద్ధరణ,\nదూర గ్రామాల్లో ఆరోగ్య శిబిరాలు, మందుల పంపిణీ,\nరైతులకు ఆధునిక పరికరాలు, సుస్థిర వ్యవసాయ పద్ధతులు,\nపేద విద్యార్థులకు స్కాలర్‌షిప్‌లు.",
+      "శ్రీధర్ రెడ్డి రాజకీయ ప్రస్థానం విద్యార్థి నాయకుడిగా ప్రారంభమైంది. నెల్లూరులోని వి.ఆర్. కాలేజీలో చదువుతున్న సమయంలో 1985లో ఆ కళాశాల అధ్యక్షుడిగా ఎన్నికయ్యారు. ఆ తర్వాత 1987లో జిల్లా యువజన ప్రధాన కార్యదర్శిగా, 1989లో రాష్ట్ర యువజన ప్రధాన కార్యదర్శిగా బాధ్యతలు నిర్వహించారు.",
     blog_para4:
-      "ప్రకృతి విపత్తుల సమయంలో సహాయ కార్యక్రమాల్లో చురుకుగా పాల్గొని, సమయానికి సహాయం అందించడంలో ఆయన ప్రసిద్ధి చెందారు.\n\nవేమిరెడ్డి ప్రభాకర్ రెడ్డి దృష్టి మార్పు పరిపాలన, యువత సాధికారత, సమగ్ర ప్రాంతీయ అభివృద్ధిపై ఉంది. పార్లమెంటేరియన్‌గా, ఆయన ప్రజల ఆకాంక్షలకు మరియు జాతీయ విధానానికి మధ్య వంతెనగా పనిచేస్తున్నారు.",
+      "ఆయన 2014లో నెల్లూరు రూరల్ నుండి మొదటిసారి ఎమ్మెల్యేగా ఎన్నికయ్యారు. 2019లో కూడా అదే నియోజకవర్గం నుండి విజయం సాధించి స్థానాన్ని నిలబెట్టుకున్నారు. 2023 ప్రారంభంలో ఆయన తెలుగుదేశం పార్టీ (TDP) లో చేరారు మరియు 2024 ఎన్నికలలో వరుసగా మూడవసారి విజయం సాధించారు.",
     blog_para5:
-      "రాజకీయాలు, వ్యాపారాన్ని మించి వేమిరెడ్డి ప్రభాకర్ రెడ్డి సేవా కార్యక్రమాల్లో నిబద్ధత చూపారు. KSR ఫౌండేషన్ ద్వారా ఆయన చేసిన సేవలు నెల్లూరు ప్రాంతంలో అనేక మందికి మేలు చేశాయి. ఆయన చేపట్టిన ప్రాజెక్టులు: శుద్ధమైన తాగునీరు, మెరుగైన పారిశుధ్యం, నాణ్యమైన విద్య, మెరుగైన ఆరోగ్య సదుపాయాలు.\n\nఆయన దత్తత తీసుకున్న గ్రామాల్లో మౌలిక వసతులు మెరుగయ్యాయి—బాగున్న రోడ్లు, సోలార్ లైటింగ్, కమ్యూనిటీ సెంటర్లు. మహిళా సాధికారత, రైతుల మద్దతు, యువత అభివృద్ధిపై ఆయన దృష్టి ఉంది.\n\nప్రగతిశీల, దయార్ద్ర నాయకుడిగా వేమిరెడ్డి ప్రభాకర్ రెడ్డి సుస్థిర అభివృద్ధి, గ్రామీణ ఆవిష్కరణ, సమగ్ర పరిపాలనకు కట్టుబడి ఉన్నారు. ఆంధ్రప్రదేశ్‌కు మెరుగైన భవిష్యత్తును నిర్మించడంలో ఆయన పాత్రను గుర్తించండి.",
+      "కోటంరెడ్డి శ్రీధర్ రెడ్డి ప్రజా సేవకు, నియోజకవర్గ అభివృద్ధికి, మౌలిక వసతుల కల్పనకు నిరంతరం కృషి చేస్తున్నారు. నెల్లూరు రూరల్ ప్రజల సమస్యల పరిష్కారమే ధ్యేయంగా ఆయన పనిచేస్తున్నారు.",
     early_life_title: "ప్రారంభ జీవితం మరియు విద్య",
     early_life_para:
-      "వేమిరెడ్డి ప్రభాకర్ రెడ్డి నెల్లూరు జిల్లాలో జన్మించారు. ఆయన కుటుంబం సామాజిక సేవలో ప్రసిద్ధి. విజయవంతమైన పారిశ్రామికవేత్త, దాతగా KSR గ్రూప్, KSR ఫౌండేషన్‌ను స్థాపించారు. ప్రజలకు సేవ చేయాలనే దృష్టితో రాజకీయాల్లోకి వచ్చారు. రాజ్యసభ సభ్యుడిగా YSR కాంగ్రెస్ పార్టీ తరఫున పనిచేశారు. పారిశ్రామికవేత్తగా ప్రారంభించి ప్రజాసేవకుడిగా మారిన ఆయన ప్రయాణం సమాజ అభివృద్ధికి ఆయన నిబద్ధతను సూచిస్తుంది.",
+      "కోటంరెడ్డి శ్రీధర్ రెడ్డి నెల్లూరులో కోటంరెడ్డి బాపిరెడ్డి మరియు సరళమ్మ దంపతులకు జన్మించారు. ఆయన నెల్లూరులోని వి.ఆర్. కాలేజీ నుండి కామర్స్‌లో పట్టభద్రులయ్యారు (B.Com). ఆయన సుజితను వివాహం చేసుకున్నారు మరియు వారికి లక్ష్మి హైందవి, సాయి వైష్ణవి అనే ఇద్దరు కుమార్తెలు ఉన్నారు.",
     facebook: "ఫేస్‌బుక్",
     twitter: "ట్విట్టర్",
     personal_details: "వ్యక్తిగత వివరాలు",
     born: "పుట్టిన తేదీ:",
-    born_details: "15 నవంబర్ 1956 (వయస్సు 68)\nనెల్లూరు, ఆంధ్రప్రదేశ్, ఇండియా",
+    born_details: "26 సెప్టెంబర్ 1965 (వయస్సు 60)\nనెల్లూరు, ఆంధ్రప్రదేశ్, ఇండియా",
     political_party: "రాజకీయ పార్టీ:",
-    political_party_name: "తెలుగు దేశం పార్టీ",
+    political_party_name: "తెలుగు దేశం పార్టీ (2023–ప్రస్తుతం)",
     parents: "తల్లిదండ్రులు:",
-    parents_details: "ప్రజలకు అందుబాటులో లేదు",
+    parents_details: "కోటంరెడ్డి బాపిరెడ్డి మరియు సరళమ్మ",
     education: "విద్య:",
     education_details:
-      "ఇంజినీరింగ్‌లో బ్యాచిలర్ డిగ్రీ (స్పష్టమైన సంస్థ తెలియదు)",
+      "బ్యాచిలర్ ఆఫ్ కామర్స్ (వి. ఆర్. కాలేజీ, నెల్లూరు)",
     recent_post: "ఇటీవలి పోస్ట్",
     check_instagram: "ఇన్‌స్టాగ్రామ్‌లో తాజా నవీకరణలు చూడండి.",
     year_2024: "2024",
@@ -368,10 +368,10 @@ export const translations = {
       "తాజా నవీకరణలు మరియు వార్తల కోసం మా న్యూస్‌లెటర్‌కు సభ్యత్వాన్ని పొందండి.",
     privacy_policy: "గోప్యతా విధానం",
     copyright:
-      "© కాపీరైట్ 2024 | అన్ని హక్కులు వేమిరెడ్డి ప్రభాకర్ రెడ్డి గారికి చెందినవి",
+      "© కాపీరైట్ 2024 | అన్ని హక్కులు కోటంరెడ్డి శ్రీధర్ రెడ్డి గారికి చెందినవి",
     aim_title: "లక్ష్యం",
     aim_desc:
-      "నెల్లూరు రూరల్ నియోజకవర్గం నుండి ఎంప్లి (MLA)గా కోటంరెడ్డి శ్రీధర్ రెడ్డి గారి ప్రధాన ఉద్దేశ్యం సమగ్ర అభివృద్ధి మరియు స్థానిక జనాలు కొరకు జీవన ప్రమాణాలు మెరుగుపర్చడం. అతని ప్రాధాన్యతల్లో వ్యవసాయ మద్దతు, యువ శక్తి, విద్య, ఆరోగ్యం మరియు మౌలిక సదుపాయాల అభివృద్ధి ఉన్నాయి.",
+      "నెల్లూరు రూరల్ నియోజకవర్గం నుండి ఎమ్మెల్యే (MLA)గా కోటంరెడ్డి శ్రీధర్ రెడ్డి గారి ప్రధాన ఉద్దేశ్యం సమగ్ర అభివృద్ధి మరియు స్థానిక జనాలు కొరకు జీవన ప్రమాణాలు మెరుగుపర్చడం. అతని ప్రాధాన్యతల్లో వ్యవసాయ మద్దతు, యువ శక్తి, విద్య, ఆరోగ్యం మరియు మౌలిక సదుపాయాల అభివృద్ధి ఉన్నాయి.",
     women_empowerment_title: "మహిళా సాధికారత శిబిరాలు",
     women_empowerment_en: "Women Empowerment Workshops",
     women_empowerment_desc:
@@ -395,17 +395,17 @@ export const translations = {
     blood_donation_title: "రక్తదాన శిబిరాలు",
     blood_donation_en: "Blood Donation Camps",
     blood_donation_desc:
-      "యువతను ప్రోత్సహిస్తూ, వీపీఆర్ ఫౌండేషన్ ద్వారా అనేక రక్తదాన శిబిరాలు నిర్వహించారు.",
+      "యువతను ప్రోత్సహిస్తూ, KSR ఫౌండేషన్ ద్వారా అనేక రక్తదాన శిబిరాలు నిర్వహించారు.",
     community_welfare_title: "స్వచ్ఛంద సేవా కార్యక్రమాలు",
     community_welfare_en: "Community Welfare Activities",
     community_welfare_desc:
       "పరిశుభ్రతా కార్యక్రమాలు, తాగునీటి ప్రాజెక్టులు, పచ్చదనం కోసం కార్యక్రమాల్లో పాల్గొన్నారు మరియు నిధులు సమకూర్చారు.",
     photo_gallery: "ఫోటో గ్యాలరీ",
     portfolio_activities:
-      "కార్యకలాపాల పోర్ట్‌ఫోలియో – వేమిరెడ్డి ప్రభాకర్ రెడ్డి",
+      "కార్యకలాపాల పోర్ట్‌ఫోలియో – కోటంరెడ్డి శ్రీధర్ రెడ్డి",
     activity1_title: "రాజకీయ నాయకత్వం & పరిపాలన",
     activity1_desc:
-      "<b>ఎంపీ (నెల్లూరు), పబ్లిక్ అండర్‌టేకింగ్స్ కమిటీ సభ్యుడు</b><br />జాతీయ స్థాయిలో చురుకైన చట్టసభ కార్యకలాపాలు, ప్రజా రంగ సంస్థల పర్యవేక్షణ, విధాన చర్చల్లో పాల్గొనడం.",
+      "<b>నెల్లూరు రూరల్ శాసనసభ సభ్యుడు (ఎమ్మెల్యే)</b><br />రాష్ట్ర స్థాయిలో చట్టసభలలో చురుకుగా పాల్గొనడం, నియోజకవర్గ సమస్యలను ప్రస్తావించడం మరియు విధాన రూపకల్పనలో సహకరించడం.",
     activity2_title: "ఉద్యోగ అవకాశాల ఏర్పాట్లు",
     activity2_desc:
       "<b>ఈవెంట్: మెగా జాబ్ ఫెయిర్, నెలల్లూరు | నిర్వాహకుడు: KSR ఫౌండేషన్</b><br />ఉద్యోగార్థులను కంపెనీలతో కలిపి, నైపుణ్య వనరులు అందించారు. వందలాది మంది ఇంటర్వ్యూలకు నమోదు చేసుకున్నారు.",
@@ -433,7 +433,7 @@ export const translations = {
     privacy_policy_title: "గోప్యతా విధానం",
     privacy_policy_meta: `<div><strong>ప్రభావిత తేదీ:</strong> 05-06-2025</div>
   <div><strong>చివరి నవీకరణ:</strong> 10-06-2025</div>
-  <div><strong>జారీ చేసిన వారు:</strong> శ్రీ వేమిరెడ్డి ప్రభాకర్ రెడ్డి కార్యాలయం, రాజ్యసభ సభ్యుడు, నెల్లూరు, ఆంధ్రప్రదేశ్</div>`,
+  <div><strong>జారీ చేసిన వారు:</strong> శ్రీ కోటంరెడ్డి శ్రీధర్ రెడ్డి కార్యాలయం, శాసనసభ సభ్యుడు (ఎమ్మెల్యే), నెల్లూరు రూరల్, ఆంధ్రప్రదేశ్</div>`,
     privacy_intro_title: "1. పరిచయం",
     privacy_intro_para1:
       "మీ గోప్యత మాకు అత్యంత ప్రాముఖ్యత కలిగినది. ఈ గోప్యతా విధానంలో మేము ఏ వ్యక్తిగత డేటాను సేకరిస్తామో, దాని ప్రయోజనాలు, రక్షణ చర్యలు, మరియు మీ హక్కులు వివరించబడ్డాయి. ప్రజా సేవలు, పరిపాలన, మరియు మద్దతు అందించే సందర్భంలో మీ సమాచారాన్ని గోప్యంగా, సమగ్రంగా ఉంచేందుకు మేము కట్టుబడి ఉన్నాము.",
@@ -505,9 +505,9 @@ export const translations = {
     privacy_retention_para:
       "ఈ విధానంలో పేర్కొన్న ఉద్దేశ్యాల కోసం లేదా వర్తించే చట్టాల ప్రకారం అవసరమైనంత కాలం మాత్రమే వ్యక్తిగత డేటాను నిల్వ చేస్తాము. అవసరం లేనప్పుడు డేటాను సురక్షితంగా తొలగించబడుతుంది లేదా 匿名ీకరించబడుతుంది.",
     privacy_contact_title: "10. సంప్రదింపు సమాచారం",
-    privacy_contact_info: `<strong>సంస్థ:</strong> శ్రీ వేమిరెడ్డి ప్రభాకర్ రెడ్డి కార్యాలయం, రాజ్యసభ సభ్యుడు, నెల్లూరు<br />
-<strong>ఇమెయిల్:</strong> <a href="mailto:dpo@kotamreddysridharreddy.in">dpo@kotamreddysridharreddy.in</a><br />
-<strong>ఫోన్:</strong> <a href="tel:+919123456789">+91 91234 56789</a>`,
+    privacy_contact_info: `<strong>సంస్థ:</strong> శ్రీ కోటంరెడ్డి శ్రీధర్ రెడ్డి కార్యాలయం, శాసనసభ సభ్యుడు (ఎమ్మెల్యే), నెల్లూరు రూరల్<br />
+<strong>ఇమెయిల్:</strong> <a href="mailto:contact@kotamreddysridharreddy.in">contact@kotamreddysridharreddy.in</a><br />
+<strong>ఫోన్:</strong> <a href="tel:+919000000000">+91 90000 00000</a>`,
     privacy_updates_title: "11. విధాన నవీకరణలు",
     privacy_updates_para1:
       "చట్టపరమైన, సాంకేతిక, ఆపరేషన్ మార్పులను ప్రతిబింబించేందుకు ఈ గోప్యతా విధానం కాలానుగుణంగా నవీకరించబడవచ్చు. వినియోగదారులు ఈ పేజీని తరచుగా పరిశీలించమని మేము సూచిస్తున్నాము. మార్పులు జరిగితే, నవీకరించిన తేదీతో ప్రచురించబడతాయి.",

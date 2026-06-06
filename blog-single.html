@@ -1,691 +1,608 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-  <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="Site keywords here" />
-    <meta name="description" content="" />
-    <meta name="copyright" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <title>Telugu Desam Party (TDP)</title>
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="Site keywords here" />
+  <meta name="description" content="" />
+  <meta name="copyright" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="icon" href="img/kotam_logo.png" />
+  <title>Telugu Desam Party (TDP)</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" href="img/kotam_logo.png" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/icofont.css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" />
-    <link rel="stylesheet" href="css/owl-carousel.css" />
-    <link rel="stylesheet" href="css/datepicker.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--light-bg);
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/icofont.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 576px) {
+      .header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
       }
-      @media (max-width: 576px) {
-        .header {
-          padding: 10px;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .header .left-images {
-          text-align: center;
-          margin-bottom: 10px;
-        }
-        .header .left-images img {
-          margin: 0 10px;
-        }
-        .header .nav-links {
-          top: 60px;
-        }
-        .header .right-image {
-          width: 100%;
-          justify-content: center;
-          margin-top: 10px;
-        }
-        .header .right-image img {
-          height: 35px;
-          width: 35px;
-        }
-        .form-container {
-          margin: 20px auto;
-          padding: 20px;
-        }
-        .form-container h2 {
-          font-size: 1.7em;
-        }
-        .footer .col-lg-3,
-        .footer .col-md-6 {
-          flex: 0 0 100%;
-          max-width: 100%;
-        }
-        .footer .single-footer {
-          margin-bottom: 25px;
-        }
-        .footer .newsletter-inner {
-          flex-direction: column;
-          align-items: center;
-        }
-        .footer .newsletter-inner .common-input {
-          width: 90%;
-          border-radius: 5px;
-          margin-bottom: 10px;
-        }
-        .footer .newsletter-inner .button {
-          width: 90%;
-          border-radius: 5px;
-        }
-      }
-      /* Language Popup */
-      #language-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9999;
-        display: none;
-        align-items: center;
-        justify-content: center;
-      }
-      #language-popup-inner {
-        background: #fffbe6;
-        padding: 32px 24px;
-        border-radius: 16px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+
+      .header .left-images {
         text-align: center;
-        max-width: 90vw;
+        margin-bottom: 10px;
       }
-      #language-popup button {
-        margin: 10px 18px 0 0;
-        padding: 10px 28px;
-        font-size: 1.1em;
-        border-radius: 8px;
-        border: none;
-        background: #ffd600;
-        color: #222;
-        font-weight: 600;
-        cursor: pointer;
+
+      .header .left-images img {
+        margin: 0 10px;
       }
-    </style>
-  </head>
-  <body>
-    <!-- Language Selection Popup -->
-    <div id="language-popup">
-      <div id="language-popup-inner">
-        <h2 style="margin-bottom: 18px" data-i18n="select_language_popup">
-          Please select your language<br /><span style="font-size: 1.1em"
-            >దయచేసి మీ భాషను ఎంచుకోండి</span
-          >
-        </h2>
-        <button id="lang-en">English</button>
-        <button id="lang-te">తెలుగు</button>
-      </div>
-    </div>
-    <!-- Header Start -->
-    <div class="header">
-      <div class="mobile-header">
-        <div class="left-images">
-          <img src="img/kotam_logo.png" alt="Kotam logo" />
-        </div>
-        <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <nav class="nav-links" id="main-nav">
-        <a href="index.html" data-i18n="home">Home</a>
-        <a href="outmotives.html" data-i18n="our_initiatives"
-          >Our Initiatives</a
-        >
-        <a href="photogallary.html" data-i18n="media">Media</a>
-        <a href="citizen-feedback.html" data-i18n="contact_us">Contact Us</a>
-        <a href="blog-single.html" data-i18n="about">About</a>
-        <a href="grievances.html" data-i18n="grievances">Grievances</a>
-        <div class="dropdown-nav">
-          <a
-            href="#"
-            class="dropdown-toggle"
-            onclick="return false;"
-            data-i18n="join"
-            >Join</a
-          >
-          <div class="dropdown-content">
-            <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
-              >Yuva Shakthi Member</a
-            >
-            <a
-              href="scheme-eligibility.html"
-              data-i18n="schemes_eligibility_form"
-              >Schemes & Eligibility Form</a
-            >
-            <a href="volunteer.html" data-i18n="join_volunteer"
-              >Join as a Volunteer</a
-            >
-            <a
-              href="mahila-shakti-grievance.html"
-              data-i18n="mahila_shakti_grievance"
-              >Mahila Shakti Grievance</a
-            >
-            <a
-              href="social-media-grievance.html"
-              data-i18n="social_media_warriors"
-              >Social Media Warriors</a
-            >
-          </div>
-        </div>
-        <a href="https://admin-panel-political.vercel.app/signin" data-i18n="signin">Signin</a>
-      </nav>
-      <div class="right-image">
-        <img
-          src="img/header/alliance3.png"
-          alt="Alliance"
-          style="width: 60px; height: 40px"
-        />
-        <img src="img/header/srntr.png" alt="Sr NTR" />
-        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
-        <img src="img/header/modi.png" alt="Modi" />
-        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
-        <img src="img/header/lokesh.png" alt="Lokesh" />
-        <img src="/public/ksr4.png" alt="KSR" />
-      </div>
-    </div>
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
-      <div class="container"></div>
-    </div>
-    <!-- End Breadcrumbs -->
+      .header .nav-links {
+        top: 60px;
+      }
 
-    <!-- Single News -->
-    <section class="news-single section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-12">
-            <div class="row">
-              <div class="col-12">
-                <div class="single-main">
-                  <!-- News Head -->
-                  <div class="news-head">
-                    <img src="/public/20.png" alt="#" />
-                  </div>
-                  <!-- News Title -->
-                  <h1 class="news-title" data-i18n="blog_title">
-                    <a href="news-single.html">
-                      Kotamreddy Sridhar Reddy: A Committed Parliamentarian
-                      Driving Inclusive Growth
-                    </a>
-                  </h1>
-                  <!-- Meta -->
-                  <div class="meta">
-                    <div class="meta-left">
-                      <span class="author">
-                        <a href="#">
-                          <img src="/public/ksr4.png" alt="#" />
-                          <span data-i18n="ksr_name"
-                            >Kotamreddy Sridhar Reddy</span
-                          >
-                        </a>
-                      </span>
-                      <span class="date">
-                        <i class="fa fa-clock-o"></i>
-                        <span data-i18n="blog_date">12 Jun 2024</span>
-                      </span>
-                    </div>
-                    <div class="meta-right">
-                      <span class="comments">
-                        <a href="#">
-                          <i class="fa fa-comments"></i>
-                          <span data-i18n="votes">766,202 Votes</span>
-                        </a>
-                      </span>
-                      <span class="views">
-                        <i class="fa fa-eye"></i>
-                        <span data-i18n="majority">245,902 Majority</span>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- News Text -->
-                  <div class="news-text">
-                    <p data-i18n="blog_para1">
-                      An experienced and dynamic leader, Kotamreddy Sridhar
-                      Reddy has been elected as a Member of Parliament (M.P.)
-                      from the Nellore Lok Sabha constituency in the 2024
-                      general elections, representing the Telugu Desam Party
-                      (TDP).
-                    </p>
-                    <p data-i18n="blog_para2">
-                      He secured a decisive mandate with a resounding victory,
-                      winning by a majority of 2,45,902 votes, a remarkable
-                      achievement that signifies the trust and confidence
-                      reposed in him by the people of Nellore. This historic win
-                      marked a significant political shift in the region,
-                      previously a stronghold of the opposition.
-                    </p>
-                    <p data-i18n="blog_para3">
-                      With a steadfast commitment to public service and
-                      inclusive development, Kotamreddy Sridhar Reddy has long
-                      been associated with social welfare through his
-                      initiatives and charitable endeavors. As the founder of
-                      KSR Foundation, he has been actively engaged in promoting
-                      education, women empowerment, healthcare access, and
-                      agricultural development across Andhra Pradesh.
-                      <br /><br />
-                      Through the Foundation, he has undertaken projects such
-                      as:
-                      <br />
-                      Building and renovating schools in underserved rural
-                      areas,
-                      <br />
-                      Launching health camps and distributing medicines in
-                      remote villages,
-                      <br />
-                      Supporting farmers with modern tools and sustainable
-                      farming practices,
-                      <br />
-                      Offering scholarships to underprivileged students.
-                    </p>
-                    <p data-i18n="blog_para4">
-                      He is also known for his proactive participation in relief
-                      efforts during natural calamities, ensuring timely aid and
-                      rehabilitation for affected communities.
-                      <br /><br />
-                      Kotamreddy Sridhar Reddy’s vision is anchored in
-                      transformative governance, empowerment of youth, and
-                      holistic regional development. As a parliamentarian, he
-                      strives to be a bridge between grassroots aspirations and
-                      national policy, working tirelessly to uplift the lives of
-                      the people he represents.
-                    </p>
-                    <div class="image-gallery">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                          <div class="single-image">
-                            <img
-                              src="/public/ksr4.png"
-                              style="width: 100%"
-                              alt="#"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                          <div class="single-image">
-                            <img
-                              src="/public/22.png"
-                              style="width: 100%"
-                              alt="#"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p data-i18n="blog_para5">
-                      Kotamreddy Sridhar Reddy's dedication transcends the
-                      realm of politics and business, finding deep roots in
-                      meaningful social service. His impactful contributions
-                      through the KSR Foundation have transformed lives across
-                      the Nellore region, where he has championed projects that
-                      ensure access to clean drinking water, better sanitation,
-                      quality education, and improved healthcare facilities.
-                      <br /><br />
-                      In villages adopted under his guidance, infrastructure has
-                      seen a remarkable uplift—well-laid roads, solar-powered
-                      street lighting, and community centers stand as a
-                      testament to his hands-on leadership. His commitment to
-                      women empowerment, farmer support, and youth development
-                      showcases his vision for a society that uplifts everyone.
-                      <br /><br />
-                      As a progressive and compassionate leader, Kotamreddy
-                      Sridhar Reddy remains deeply committed to sustainable
-                      development, grassroots innovation, and inclusive
-                      governance. Join us in acknowledging the enduring impact
-                      of Kotamreddy Sridhar Reddy—a visionary statesman shaping
-                      a brighter, more equitable future for Andhra Pradesh.
-                    </p>
-                    <blockquote class="overlay">
-                      <h3 data-i18n="early_life_title">
-                        Early Life and Education
-                      </h3>
-                      <p data-i18n="early_life_para">
-                        Kotamreddy Sridhar Reddy was born in Nellore district,
-                        Andhra Pradesh, into a family known for its deep-rooted
-                        values and commitment to community service. A successful
-                        industrialist and philanthropist, he is the founder of
-                        the KSR Group and KSR Foundation, through which he has
-                        undertaken numerous social welfare initiatives across
-                        the state. With a vision to serve the people, he entered
-                        public life and served as a Member of Parliament in the
-                        Rajya Sabha representing the YSR Congress Party. His
-                        journey from a reputed entrepreneur to a dedicated
-                        public servant reflects his unwavering dedication to the
-                        betterment of society.
-                      </p>
-                    </blockquote>
-                  </div>
-                  <div class="blog-bottom">
-                    <!-- Social Share -->
-                    <ul class="social-share">
-                      <li class="facebook">
-                        <a href="#"
-                          ><i class="fa fa-facebook"></i
-                          ><span data-i18n="facebook">Facebook</span></a
-                        >
-                      </li>
-                      <li class="twitter">
-                        <a href="#"
-                          ><i class="fa fa-twitter"></i
-                          ><span data-i18n="twitter">Twitter</span></a
-                        >
-                      </li>
-                      <li class="google-plus">
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                      </li>
-                      <li class="linkedin">
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                      <li class="pinterest">
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                    </ul>
-                  </div>
+      .header .right-image {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .header .right-image img {
+        height: 35px;
+        width: 35px;
+      }
+
+      .form-container {
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .form-container h2 {
+        font-size: 1.7em;
+      }
+
+      .footer .col-lg-3,
+      .footer .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .footer .single-footer {
+        margin-bottom: 25px;
+      }
+
+      .footer .newsletter-inner {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer .newsletter-inner .common-input {
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .footer .newsletter-inner .button {
+        width: 90%;
+        border-radius: 5px;
+      }
+    }
+
+    /* Language Popup */
+    #language-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #language-popup-inner {
+      background: #fffbe6;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+      text-align: center;
+      max-width: 90vw;
+    }
+
+    #language-popup button {
+      margin: 10px 18px 0 0;
+      padding: 10px 28px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      border: none;
+      background: #ffd600;
+      color: #222;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Language Selection Popup -->
+  <div id="language-popup">
+    <div id="language-popup-inner">
+      <h2 style="margin-bottom: 18px" data-i18n="select_language_popup">
+        Please select your language<br /><span style="font-size: 1.1em">దయచేసి మీ భాషను ఎంచుకోండి</span>
+      </h2>
+      <button id="lang-en">English</button>
+      <button id="lang-te">తెలుగు</button>
+    </div>
+  </div>
+  <!-- Header Start -->
+  <div class="header">
+    <div class="mobile-header">
+      <div class="left-images">
+        <img src="img/kotam_logo.png" alt="Kotam logo" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="nav-links" id="main-nav">
+      <a href="index.html" data-i18n="home">Home</a>
+      <a href="outmotives.html" data-i18n="our_initiatives">Our Initiatives</a>
+      <a href="photogallary.html" data-i18n="media">Media</a>
+      <a href="citizen-feedback.html" data-i18n="contact_us">Contact Us</a>
+      <a href="blog-single.html" data-i18n="about">About</a>
+      <a href="grievances.html" data-i18n="grievances">Grievances</a>
+      <div class="dropdown-nav">
+        <a href="#" class="dropdown-toggle" onclick="return false;" data-i18n="join">Join</a>
+        <div class="dropdown-content">
+          <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member">Yuva Shakthi Member</a>
+          <a href="scheme-eligibility.html" data-i18n="schemes_eligibility_form">Schemes & Eligibility Form</a>
+          <a href="volunteer.html" data-i18n="join_volunteer">Join as a Volunteer</a>
+          <a href="mahila-shakti-grievance.html" data-i18n="mahila_shakti_grievance">Mahila Shakti Grievance</a>
+          <a href="social-media-grievance.html" data-i18n="social_media_warriors">Social Media Warriors</a>
+        </div>
+      </div>
+      <a href="https://admin-panel-political.vercel.app/signin" data-i18n="signin">Signin</a>
+    </nav>
+    <div class="right-image">
+      <img src="img/header/alliance3.png" alt="Alliance" style="width: 60px; height: 40px" />
+      <img src="img/header/srntr.png" alt="Sr NTR" />
+      <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+      <img src="img/header/modi.png" alt="Modi" />
+      <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+      <img src="img/header/lokesh.png" alt="Lokesh" />
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs overlay">
+    <div class="container"></div>
+  </div>
+  <!-- End Breadcrumbs -->
+
+  <!-- Single News -->
+  <section class="news-single section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="single-main">
+                <!-- News Head -->
+                <div class="news-head">
+                  <img src="/public/index6.png" alt="#" />
                 </div>
-              </div>
-              <div class="col-12"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="main-sidebar">
-              <!-- Single Widget -->
-              <div class="single-widget category">
-                <h3 class="title" data-i18n="personal_details">
-                  Personal details
-                </h3>
-                <ul class="categor-list">
-                  <h5 data-i18n="born">Born:</h5>
-                  <p data-i18n="born_details">
-                    15 November 1956 (age 68) <br />
-                    Nellore, Andhra Pradesh, India
-                  </p>
-                  <h5 data-i18n="political_party">Political party:</h5>
-                  <p data-i18n="political_party_name">Telugu Desam Party</p>
-                  <h5 data-i18n="parents">Parents:</h5>
-                  <p data-i18n="parents_details">Not publicly documented</p>
-                  <h5 data-i18n="education">Education:</h5>
-                  <p data-i18n="education_details">
-                    Bachelor's degree in Engineering (exact institution not
-                    publicly specified)
-                  </p>
-                </ul>
-              </div>
-              <!--/ End Single Widget -->
-              <!-- Single Widget -->
-              <div class="single-widget recent-post">
-                <h3 class="title" data-i18n="recent_post">Recent post</h3>
-                <!-- Single Post -->
-                <div class="single-post">
-                  <div class="image">
-                    <img src="/public/3.png" alt="#" />
-                  </div>
-                  <div class="content">
-                    <h5>
-                      <a
-                        href="https://www.instagram.com/ksrabhakarreddyofficial/reel/DGS8-chyXf2/?locale=zh-hans"
-                        data-i18n="check_instagram"
-                      >
-                        Check new updates on instagram.
+                <!-- News Title -->
+                <h1 class="news-title" data-i18n="blog_title">
+                  <a href="news-single.html">
+                    Kotamreddy Sridhar Reddy: A Committed Parliamentarian
+                    Driving Inclusive Growth
+                  </a>
+                </h1>
+                <!-- Meta -->
+                <div class="meta">
+                  <div class="meta-left">
+                    <span class="author">
+                      <a href="#">
+                        <span data-i18n="ksr_name">Kotamreddy Sridhar Reddy</span>
                       </a>
-                    </h5>
-                    <ul class="comment">
-                      <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <span data-i18n="year_2024">2024</span>
-                      </li>
-                      <li>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                        <span data-i18n="comments_35">35</span>
-                      </li>
-                    </ul>
+                    </span>
+                    <span class="date">
+                      <i class="fa fa-clock-o"></i>
+                      <span data-i18n="blog_date">12 Jun 2024</span>
+                    </span>
+                  </div>
+                  <div class="meta-right">
+                    <span class="comments">
+                      <a href="#">
+                        <i class="fa fa-comments"></i>
+                        <span data-i18n="votes">766,202 Votes</span>
+                      </a>
+                    </span>
+                    <span class="views">
+                      <i class="fa fa-eye"></i>
+                      <span data-i18n="majority">245,902 Majority</span>
+                    </span>
                   </div>
                 </div>
-                <!-- End Single Post -->
-              </div>
-              <!--/ End Single Widget -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ End Single News -->
-
-    <!-- Footer Area -->
-    <footer id="footer" class="footer">
-      <div style="justify-content: center">
-        <footer id="footer" class="footer">
-          <!-- Footer Top -->
-          <div class="footer-top">
-            <div class="container">
-              <div class="row">
-                <div
-                  class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
-                >
-                  <div class="single-footer">
-                    <h2 data-i18n="about_us">About Us</h2>
-                    <p data-i18n="about_us_desc">
-                      We are committed to making a positive impact on society
-                      through our objectives and initiatives. Join us in our
-                      mission for a better tomorrow.
-                    </p>
-                    <!-- Social -->
-                    <ul class="social">
-                      <li>
-                        <a
-                          href="https://www.facebook.com/kotamreddysridharreddy"
-                          target="_blank"
-                          ><i class="icofont-facebook"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/kotamreddysridharreddy"
-                          target="_blank"
-                          ><i class="icofont-instagram"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://x.com/KotamreddySridhar" target="_blank"
-                          ><i class="icofont-twitter"></i
-                        ></a>
-                      </li>
-                    </ul>
-                    <!-- End Social -->
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
-                >
-                  <div class="single-footer f-link">
-                    <h2 data-i18n="quick_links">Quick Links</h2>
+                <!-- News Text -->
+                <div class="news-text">
+                  <p data-i18n="blog_para1">
+                    An experienced and dynamic leader, Kotamreddy Sridhar
+                    Reddy has been elected as a Member of Parliament (M.P.)
+                    from the Nellore Lok Sabha constituency in the 2024
+                    general elections, representing the Telugu Desam Party
+                    (TDP).
+                  </p>
+                  <p data-i18n="blog_para2">
+                    He secured a decisive mandate with a resounding victory,
+                    winning by a majority of 2,45,902 votes, a remarkable
+                    achievement that signifies the trust and confidence
+                    reposed in him by the people of Nellore. This historic win
+                    marked a significant political shift in the region,
+                    previously a stronghold of the opposition.
+                  </p>
+                  <p data-i18n="blog_para3">
+                    With a steadfast commitment to public service and
+                    inclusive development, Kotamreddy Sridhar Reddy has long
+                    been associated with social welfare through his
+                    initiatives and charitable endeavors. As the founder of
+                    KSR Foundation, he has been actively engaged in promoting
+                    education, women empowerment, healthcare access, and
+                    agricultural development across Andhra Pradesh.
+                    <br /><br />
+                    Through the Foundation, he has undertaken projects such
+                    as:
+                    <br />
+                    Building and renovating schools in underserved rural
+                    areas,
+                    <br />
+                    Launching health camps and distributing medicines in
+                    remote villages,
+                    <br />
+                    Supporting farmers with modern tools and sustainable
+                    farming practices,
+                    <br />
+                    Offering scholarships to underprivileged students.
+                  </p>
+                  <p data-i18n="blog_para4">
+                    He is also known for his proactive participation in relief
+                    efforts during natural calamities, ensuring timely aid and
+                    rehabilitation for affected communities.
+                    <br /><br />
+                    Kotamreddy Sridhar Reddy’s vision is anchored in
+                    transformative governance, empowerment of youth, and
+                    holistic regional development. As a parliamentarian, he
+                    strives to be a bridge between grassroots aspirations and
+                    national policy, working tirelessly to uplift the lives of
+                    the people he represents.
+                  </p>
+                  <div class="image-gallery">
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-12">
-                        <ul>
-                          <li>
-                            <a href="index.html"
-                              ><i
-                                class="fa fa-caret-right"
-                                aria-hidden="true"
-                              ></i
-                              ><span data-i18n="home">Home</span></a
-                            >
-                          </li>
-                          <li>
-                            <a href="contact.html"
-                              ><i
-                                class="fa fa-caret-right"
-                                aria-hidden="true"
-                              ></i
-                              ><span data-i18n="about_us_link"
-                                >About Us</span
-                              ></a
-                            >
-                          </li>
-                          <li>
-                            <a href="outmotives.html"
-                              ><i
-                                class="fa fa-caret-right"
-                                aria-hidden="true"
-                              ></i
-                              ><span data-i18n="motive">Motive</span></a
-                            >
-                          </li>
-                        </ul>
+                        <div class="single-image">
+                          <img src="/public/21.png" style="width: 100%" alt="#" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <div class="single-image">
+                          <img src="/public/22.png" style="width: 100%" alt="#" />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
-                >
-                  <div class="single-footer">
-                    <h2 data-i18n="newsletter">Newsletter</h2>
-                    <p data-i18n="newsletter_desc">
-                      Subscribe to our newsletter for the latest updates and
-                      news.
+                  <p data-i18n="blog_para5">
+                    Kotamreddy Sridhar Reddy's dedication transcends the
+                    realm of politics and business, finding deep roots in
+                    meaningful social service. His impactful contributions
+                    through the KSR Foundation have transformed lives across
+                    the Nellore region, where he has championed projects that
+                    ensure access to clean drinking water, better sanitation,
+                    quality education, and improved healthcare facilities.
+                    <br /><br />
+                    In villages adopted under his guidance, infrastructure has
+                    seen a remarkable uplift—well-laid roads, solar-powered
+                    street lighting, and community centers stand as a
+                    testament to his hands-on leadership. His commitment to
+                    women empowerment, farmer support, and youth development
+                    showcases his vision for a society that uplifts everyone.
+                    <br /><br />
+                    As a progressive and compassionate leader, Kotamreddy
+                    Sridhar Reddy remains deeply committed to sustainable
+                    development, grassroots innovation, and inclusive
+                    governance. Join us in acknowledging the enduring impact
+                    of Kotamreddy Sridhar Reddy—a visionary statesman shaping
+                    a brighter, more equitable future for Andhra Pradesh.
+                  </p>
+                  <blockquote class="overlay">
+                    <h3 data-i18n="early_life_title">
+                      Early Life and Education
+                    </h3>
+                    <p data-i18n="early_life_para">
+                      Kotamreddy Sridhar Reddy was born in Nellore district,
+                      Andhra Pradesh, into a family known for its deep-rooted
+                      values and commitment to community service. A successful
+                      industrialist and philanthropist, he is the founder of
+                      the KSR Group and KSR Foundation, through which he has
+                      undertaken numerous social welfare initiatives across
+                      the state. With a vision to serve the people, he entered
+                      public life and served as a Member of Parliament in the
+                      Rajya Sabha representing the YSR Congress Party. His
+                      journey from a reputed entrepreneur to a dedicated
+                      public servant reflects his unwavering dedication to the
+                      betterment of society.
                     </p>
-                    <form
-                      action="mail/mail.php"
-                      method="get"
-                      target="_blank"
-                      class="newsletter-inner"
-                    >
-                      <input
-                        name="email"
-                        placeholder="Email Address"
-                        class="common-input"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Your email address'"
-                        required=""
-                        type="email"
-                      />
-                      <button class="button">
-                        <i class="icofont icofont-paper-plane"></i>
-                      </button>
-                    </form>
-                  </div>
+                  </blockquote>
+                </div>
+                <div class="blog-bottom">
+                  <!-- Social Share -->
+                  <ul class="social-share">
+                    <li class="facebook">
+                      <a href="#"><i class="fa fa-facebook"></i><span data-i18n="facebook">Facebook</span></a>
+                    </li>
+                    <li class="twitter">
+                      <a href="#"><i class="fa fa-twitter"></i><span data-i18n="twitter">Twitter</span></a>
+                    </li>
+                    <li class="google-plus">
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="linkedin">
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li class="pinterest">
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+            <div class="col-12"></div>
           </div>
-          <!--/ End Footer Top -->
-          <!-- Copyright -->
-          <div class="copyright">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                  <div class="copyright-content">
-                    <p data-i18n="copyright">
-                      © Copyright 2024 |
-                      <a
-                        href="privacy-policy.html"
-                        target="_blank"
-                        data-i18n="privacy_policy"
-                        >Privacy Policy</a
-                      >
-                      | All Rights Reserved by Kotamreddy Sridhar Reddy
-                    </p>
-                  </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="main-sidebar">
+            <!-- Single Widget -->
+            <div class="single-widget category">
+              <h3 class="title" data-i18n="personal_details">
+                Personal details
+              </h3>
+              <ul class="categor-list">
+                <h5 data-i18n="born">Born:</h5>
+                <p data-i18n="born_details">
+                  15 November 1956 (age 68) <br />
+                  Nellore, Andhra Pradesh, India
+                </p>
+                <h5 data-i18n="political_party">Political party:</h5>
+                <p data-i18n="political_party_name">Telugu Desam Party</p>
+                <h5 data-i18n="parents">Parents:</h5>
+                <p data-i18n="parents_details">Not publicly documented</p>
+                <h5 data-i18n="education">Education:</h5>
+                <p data-i18n="education_details">
+                  Bachelor's degree in Engineering (exact institution not
+                  publicly specified)
+                </p>
+              </ul>
+            </div>
+            <!--/ End Single Widget -->
+            <!-- Single Widget -->
+            <div class="single-widget recent-post">
+              <h3 class="title" data-i18n="recent_post">Recent post</h3>
+              <!-- Single Post -->
+              <div class="single-post">
+                <div class="image">
+                  <img src="/public/3.png" alt="#" />
+                </div>
+                <div class="content">
+                  <h5>
+                    <a href="https://www.instagram.com/ksrabhakarreddyofficial/reel/DGS8-chyXf2/?locale=zh-hans"
+                      data-i18n="check_instagram">
+                      Check new updates on instagram.
+                    </a>
+                  </h5>
+                  <ul class="comment">
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                      <span data-i18n="year_2024">2024</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                      <span data-i18n="comments_35">35</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
+              <!-- End Single Post -->
             </div>
+            <!--/ End Single Widget -->
           </div>
-          <!--/ End Copyright -->
-        </footer>
+        </div>
       </div>
-      <!--/ End Copyright -->
-    </footer>
-    <!--/ End Footer Area -->
+    </div>
+  </section>
+  <!--/ End Single News -->
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/colors.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/slicknav.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/niceselect.js"></script>
-    <script src="js/tilt.jquery.min.js"></script>
-    <script src="js/owl-carousel.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/steller.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script type="module" src="js/translations.js"></script>
-    <script type="module">
-      import { translations } from "./js/translations.js";
-      function setLanguage(lang) {
-        sessionStorage.setItem("lang", lang);
-        document.querySelectorAll("[data-i18n]").forEach((el) => {
-          const key = el.getAttribute("data-i18n");
-          if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
-          }
-        });
-      }
-      document.addEventListener("DOMContentLoaded", () => {
-        const lang = sessionStorage.getItem("lang");
-        if (!lang) {
-          document.getElementById("language-popup").style.display = "flex";
-        } else {
-          document.getElementById("language-popup").style.display = "none";
-          setLanguage(lang);
+  <!-- Footer Area -->
+  <footer id="footer" class="footer">
+    <div style="justify-content: center">
+      <footer id="footer" class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2">
+                <div class="single-footer">
+                  <h2 data-i18n="about_us">About Us</h2>
+                  <p data-i18n="about_us_desc">
+                    We are committed to making a positive impact on society
+                    through our objectives and initiatives. Join us in our
+                    mission for a better tomorrow.
+                  </p>
+                  <!-- Social -->
+                  <ul class="social">
+                    <li>
+                      <a href="https://www.facebook.com/kotamreddysridharreddy" target="_blank"><i
+                          class="icofont-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/kotamreddysridharreddy" target="_blank"><i
+                          class="icofont-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/KotamreddySridhar" target="_blank"><i class="icofont-twitter"></i></a>
+                    </li>
+                  </ul>
+                  <!-- End Social -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1">
+                <div class="single-footer f-link">
+                  <h2 data-i18n="quick_links">Quick Links</h2>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <ul>
+                        <li>
+                          <a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i><span
+                              data-i18n="home">Home</span></a>
+                        </li>
+                        <li>
+                          <a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i><span
+                              data-i18n="about_us_link">About Us</span></a>
+                        </li>
+                        <li>
+                          <a href="outmotives.html"><i class="fa fa-caret-right" aria-hidden="true"></i><span
+                              data-i18n="motive">Motive</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3">
+                <div class="single-footer">
+                  <h2 data-i18n="newsletter">Newsletter</h2>
+                  <p data-i18n="newsletter_desc">
+                    Subscribe to our newsletter for the latest updates and
+                    news.
+                  </p>
+                  <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                    <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Your email address'" required="" type="email" />
+                    <button class="button">
+                      <i class="icofont icofont-paper-plane"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Copyright -->
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="copyright-content">
+                  <p data-i18n="copyright">
+                    © Copyright 2024 |
+                    <a href="privacy-policy.html" target="_blank" data-i18n="privacy_policy">Privacy Policy</a>
+                    | All Rights Reserved by Kotamreddy Sridhar Reddy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ End Copyright -->
+      </footer>
+    </div>
+    <!--/ End Copyright -->
+  </footer>
+  <!--/ End Footer Area -->
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/colors.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/slicknav.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/niceselect.js"></script>
+  <script src="js/tilt.jquery.min.js"></script>
+  <script src="js/owl-carousel.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/steller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/translations.js"></script>
+  <script type="module">
+    import { translations } from "./js/translations.js";
+    function setLanguage(lang) {
+      sessionStorage.setItem("lang", lang);
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
         }
       });
-      document.getElementById("lang-en").onclick = () => {
-        setLanguage("en");
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      const lang = sessionStorage.getItem("lang");
+      if (!lang) {
+        document.getElementById("language-popup").style.display = "flex";
+      } else {
         document.getElementById("language-popup").style.display = "none";
-      };
-      document.getElementById("lang-te").onclick = () => {
-        setLanguage("te");
-        document.getElementById("language-popup").style.display = "none";
-      };
+        setLanguage(lang);
+      }
+    });
+    document.getElementById("lang-en").onclick = () => {
+      setLanguage("en");
+      document.getElementById("language-popup").style.display = "none";
+    };
+    document.getElementById("lang-te").onclick = () => {
+      setLanguage("te");
+      document.getElementById("language-popup").style.display = "none";
+    };
 
-      // Mobile menu toggle
-      document
-        .getElementById("mobile-menu")
-        .addEventListener("click", function () {
-          var nav = document.getElementById("main-nav");
-          this.classList.toggle("active");
-          nav.classList.toggle("active");
-        });
-    </script>
-  </body>
+    // Mobile menu toggle
+    document
+      .getElementById("mobile-menu")
+      .addEventListener("click", function () {
+        var nav = document.getElementById("main-nav");
+        this.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+  </script>
+</body>
+
 </html>
