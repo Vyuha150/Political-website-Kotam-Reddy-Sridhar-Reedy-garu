@@ -23,9 +23,11 @@
 
 .header .left-images img {
   height: 50px;
+  width: 50px; /* Equal to height so border-radius: 50% is a true circle, not an oval */
   margin-right: 20px; /* Adjusted margin */
   border-radius: 50%;
   object-fit: cover;
+  background: #fff; /* Fills any transparent corners the source logo has */
 }
 
 .header .nav-links {
@@ -124,8 +126,8 @@
   }
 
   .left-images img {
-    max-height: 40px;
-    width: auto;
+    height: 40px;
+    width: 40px;
   }
 
   .menu-toggle {

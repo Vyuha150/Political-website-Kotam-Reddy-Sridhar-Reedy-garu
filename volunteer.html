@@ -41,76 +41,13 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--light-bg);
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        color: var(--text-color);
-      }
-
-      /* --- Volunteer Form Styles --- */
-      .form-container {
-        background-color: var(--primary-color);
-        padding: 30px; /* More padding */
-        border-radius: 12px; /* More rounded corners */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-        width: 90%; /* Responsive width */
-        max-width: 550px; /* Increased max-width */
-        margin: 40px auto;
-        text-align: center;
-        box-sizing: border-box; /* Include padding in width */
-      }
-
-      .form-container h2 {
-        margin-bottom: 25px; /* More space */
-        color: var(--secondary-color);
-        font-size: 2em; /* Larger heading */
-        font-weight: 700;
-      }
-
-      .form-container input,
-      .form-container textarea,
-      .form-container select {
-        width: 100%; /* Full width within container */
-        padding: 12px 15px; /* More padding */
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 8px; /* Slightly more rounded */
-        font-size: 1em;
-        box-sizing: border-box; /* Crucial for responsiveness */
-      }
-
-      .form-container textarea {
-        resize: vertical; /* Allow vertical resizing */
-        min-height: 100px; /* Minimum height */
-      }
-
-      .form-container button {
-        background-color: var(--button-success);
-        color: white;
-        padding: 12px 25px; /* More padding */
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1.1em;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-        margin-top: 15px;
-      }
-
-      .form-container button:hover {
-        background-color: var(--button-success-hover);
-      }
-    </style>
+    <link rel="stylesheet" href="css/forms.css" />
   </head>
   <body>
     <div class="header">
       <div class="mobile-header">
         <div class="left-images">
-          <img src="img/kotam_logo.png" alt="Kotam logo" />
+          <img src="img/tdp-party-logo.jpg" alt="TDP" />
         </div>
         <div class="menu-toggle" id="mobile-menu">
           <span></span>
@@ -221,6 +158,18 @@
           placeholder="Why do you want to volunteer? / మీరు వాలంటీర్‌గా ఎందుకు చేరాలనుకుంటున్నారు?"
           required
         ></textarea>
+        <div class="consent-block">
+          <label class="consent-checkbox">
+            <input type="checkbox" name="consent" id="consent" required />
+            <span>
+              I have read and agree to the
+              <a href="privacy-policy.html" target="_blank">Privacy Policy</a>, and I consent to my information being collected and used to process this request. /
+              <span class="te-txt">నేను <a href="privacy-policy.html" target="_blank">గోప్యతా విధానాన్ని</a> చదివి అంగీకరిస్తున్నాను, మరియు నా సమాచారాన్ని ఈ అభ్యర్థనను పరిష్కరించడానికి సేకరించి వినియోగించడానికి సమ్మతిస్తున్నాను.</span>
+            </span>
+          </label>
+          <div class="trust-note">&#128274; Your details are kept confidential and shared only with our constituency team to act on your request.</div>
+        </div>
+
         <button type="submit">Submit / సమర్పించండి</button>
       </form>
     </div>

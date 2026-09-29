@@ -41,118 +41,13 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--light-bg);
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        color: var(--text-color);
-      }
-      .form-container {
-        background-color: var(--primary-color);
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        width: 90%;
-        max-width: 650px;
-        margin: 40px auto;
-        text-align: center;
-        box-sizing: border-box;
-      }
-      .form-container h2 {
-        margin-bottom: 10px;
-        color: var(--secondary-color);
-        font-size: 2em;
-        font-weight: 700;
-      }
-      .form-container .explanation {
-        font-size: 1.1em;
-        color: var(--text-color);
-        margin-bottom: 25px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 8px;
-        padding: 10px 15px;
-      }
-      .form-container label {
-        display: block;
-        text-align: left;
-        margin: 8px 0 4px 2px;
-        font-weight: 500;
-      }
-      .form-container input,
-      .form-container textarea,
-      .form-container select {
-        width: 100%;
-        padding: 12px 15px;
-        margin: 8px 0 16px 0;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 1em;
-        box-sizing: border-box;
-      }
-      .form-container textarea {
-        resize: vertical;
-        min-height: 80px;
-      }
-      .form-container .checkbox-group,
-      .form-container .radio-group {
-        text-align: left;
-        margin-bottom: 16px;
-      }
-      .form-container .checkbox-group label,
-      .form-container .radio-group label {
-        display: inline-block;
-        margin-right: 15px;
-        font-weight: 400;
-      }
-      .form-container button {
-        background-color: var(--button-success);
-        color: white;
-        padding: 12px 25px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.1em;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-        margin-top: 15px;
-      }
-      .form-container button[type="reset"] {
-        background-color: #aaa;
-        color: #fff;
-        margin-left: 10px;
-      }
-      .form-container button:hover {
-        background-color: var(--button-success-hover);
-      }
-      .ksr-image-container {
-        text-align: center;
-        margin-top: 30px;
-      }
-      .ksr-image-container img {
-        max-width: 160px;
-        width: 100%;
-        border-radius: 50%;
-        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-        margin-bottom: 18px;
-      }
-      @media (max-width: 600px) {
-        .form-container {
-          padding: 10px;
-        }
-      }
-      .te-txt {
-        color: #4b2e06 !important;
-        font-family: inherit;
-      }
-    </style>
+    <link rel="stylesheet" href="css/forms.css" />
   </head>
   <body>
     <div class="header">
       <div class="mobile-header">
         <div class="left-images">
-          <img src="img/kotam_logo.png" alt="Kotam logo" />
+          <img src="img/tdp-party-logo.jpg" alt="TDP" />
         </div>
         <div class="menu-toggle" id="mobile-menu">
           <span></span>
@@ -493,18 +388,22 @@
         ></textarea>
 
         <!-- Declaration -->
-        <div class="checkbox-group" style="margin-top: 20px">
-          <label>
+        <div class="consent-block">
+          <label class="consent-checkbox">
             <input type="checkbox" name="ms_declaration" required />
-            I hereby declare that the information provided above is true to the
-            best of my knowledge. I understand that this platform is for
-            constructive participation and collective change. /
-            <span class="te-txt"
-              >నేను ఇక్కడ అందించిన సమాచారం నా తెలిసినంతవరకు నిజమని
-              ప్రకటిస్తున్నాను. ఈ వేదిక నిర్మాణాత్మక పాల్గొనడం మరియు సామూహిక
-              మార్పు కోసం అని నేను అర్థం చేసుకున్నాను.</span
-            >
+            <span>
+              I hereby declare that the information provided above is true to the
+              best of my knowledge, I have read and agree to the
+              <a href="privacy-policy.html" target="_blank">Privacy Policy</a>, and I understand that this platform is for
+              constructive participation and collective change. /
+              <span class="te-txt"
+                >నేను ఇక్కడ అందించిన సమాచారం నా తెలిసినంతవరకు నిజమని
+                ప్రకటిస్తున్నాను, <a href="privacy-policy.html" target="_blank">గోప్యతా విధానాన్ని</a> చదివి అంగీకరిస్తున్నాను. ఈ వేదిక నిర్మాణాత్మక పాల్గొనడం మరియు సామూహిక
+                మార్పు కోసం అని నేను అర్థం చేసుకున్నాను.</span
+              >
+            </span>
           </label>
+          <div class="trust-note">&#128274; Your details are kept confidential and shared only with our constituency team to act on your request.</div>
         </div>
 
         <button type="submit">

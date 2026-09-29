@@ -1,0 +1,453 @@
+/* css/forms.css
+   Shared design system for the 8 public forms (grievances, volunteer,
+   scheme-eligibility, citizen-feedback, mahila-shakti-grievance,
+   social-media-grievance, yuva-shakthi, complaint). Targets the same
+   class/element names every form already uses (.form-container, label,
+   input/select/textarea, .checkbox-group/.radio-group, button) so no form
+   markup had to change to pick this up.
+*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-bg, #f9f9f9);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--text-color, #333);
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 40px 40px 36px;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(11, 42, 59, 0.1), 0 2px 8px rgba(11, 42, 59, 0.06);
+  border-top: 6px solid var(--primary-color, #ffcc00);
+  width: 92%;
+  max-width: 700px;
+  margin: 48px auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.ksr-image-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ksr-image-container img {
+  max-width: 160px;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  margin-bottom: 18px;
+}
+
+.te-txt {
+  color: #4b2e06 !important;
+  font-family: inherit;
+}
+
+.form-container h2 {
+  margin: 0 0 6px;
+  color: var(--secondary-color, #0b2a3b);
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.form-container h2 span {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 500;
+  color: #5a6b74;
+  margin-top: 4px;
+}
+
+.form-container .explanation {
+  font-size: 0.98em;
+  color: #33474f;
+  margin: 20px 0 30px;
+  background: #f3f8fa;
+  border: 1px solid #e1edf1;
+  border-left: 4px solid var(--secondary-color, #0b2a3b);
+  border-radius: 10px;
+  padding: 14px 18px;
+  line-height: 1.55;
+}
+
+.form-container .form-section-title {
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-color, #0b2a3b);
+  border-bottom: 2px solid #ffe89a;
+  padding-bottom: 6px;
+  margin: 28px 0 14px;
+}
+
+.form-container label {
+  display: block;
+  text-align: left;
+  margin: 14px 0 6px 1px;
+  font-weight: 600;
+  font-size: 0.94em;
+  color: #22333b;
+}
+
+.form-container label span {
+  font-weight: 400;
+  color: #5a6b74;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="tel"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 11px 14px;
+  margin: 0 0 4px 0;
+  border: 1.5px solid #dfe4e7;
+  background: #fcfdfd;
+  border-radius: 9px;
+  font-size: 0.98em;
+  font-family: inherit;
+  color: #1f2d33;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="tel"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="date"]:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+  outline: none;
+  border-color: var(--secondary-color, #0b2a3b);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(11, 42, 59, 0.1);
+}
+
+.form-container textarea {
+  resize: vertical;
+  min-height: 90px;
+  line-height: 1.5;
+}
+
+.form-container input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 0 0 4px;
+  border: 1.5px dashed #cfd8dc;
+  border-radius: 9px;
+  background: #fcfdfd;
+  font-size: 0.92em;
+  box-sizing: border-box;
+}
+
+.form-container input[type="file"]::file-selector-button {
+  padding: 7px 14px;
+  margin-right: 12px;
+  border: none;
+  border-radius: 7px;
+  background: var(--secondary-color, #0b2a3b);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.92em;
+  cursor: pointer;
+}
+
+.form-container .checkbox-group,
+.form-container .radio-group {
+  text-align: left;
+  margin: 4px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.form-container .checkbox-group label,
+.form-container .radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.94em;
+  color: #22333b;
+}
+
+.form-container input[type="checkbox"],
+.form-container input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--secondary-color, #0b2a3b);
+  cursor: pointer;
+}
+
+/* Consent / privacy disclaimer block, placed just above the submit button */
+.form-container .consent-block {
+  margin: 30px 0 8px;
+  padding: 16px 18px;
+  background: #f3f8fa;
+  border: 1px solid #dcebef;
+  border-radius: 10px;
+}
+
+.form-container .consent-block .consent-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92em;
+  color: #22333b;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.form-container .consent-block .consent-checkbox input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.form-container .consent-block a {
+  color: var(--secondary-color, #0b2a3b);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.form-container .consent-block .trust-note {
+  margin: 10px 0 0 27px;
+  font-size: 0.85em;
+  color: #52646c;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #ffd83d, #ffc400);
+  color: #0b2a3b;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.08em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  margin-top: 22px;
+  box-shadow: 0 6px 18px rgba(255, 196, 0, 0.35);
+}
+
+.form-container button[type="submit"]:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 196, 0, 0.45);
+}
+
+.form-container button[type="submit"]:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-container button[type="reset"] {
+  display: block;
+  width: 100%;
+  background: #eef1f2;
+  color: #33474f;
+  padding: 12px 25px;
+  border: 1.5px solid #dfe4e7;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.98em;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background 0.15s ease;
+}
+
+.form-container button[type="reset"]:hover {
+  background: #e2e7e9;
+}
+
+/* Section header used to break long forms (e.g. citizen-feedback) into
+   readable chunks */
+.form-container .section-header {
+  background: linear-gradient(135deg, #0b2a3b, #14415b);
+  color: #fff;
+  padding: 13px 16px;
+  border-radius: 9px;
+  margin: 28px 0 14px;
+  font-weight: 700;
+  font-size: 1.05em;
+  letter-spacing: 0.01em;
+}
+
+.form-container .question-item {
+  background: #f8fafb;
+  border: 1px solid #eef2f3;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.form-container .satisfaction-rating {
+  background: #f8fafb;
+  border: 1px solid #eef2f3;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 14px 0;
+}
+
+.form-container .final-question {
+  background: #f2f9f3;
+  border: 1.5px solid #bfe3c4;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 26px 0;
+}
+
+/* Scheme-eligibility result panel */
+.eligible-schemes {
+  background: #f3f8fa;
+  border: 1px solid #dcebef;
+  border-radius: 10px;
+  margin-top: 22px;
+  padding: 18px 20px;
+  color: #22333b;
+  text-align: left;
+  display: none;
+}
+
+.eligible-schemes h3 {
+  color: var(--secondary-color, #0b2a3b);
+  margin-bottom: 10px;
+}
+
+.eligible-schemes ul {
+  margin: 0 0 0 18px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .form-container .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 28px 20px 26px;
+    border-radius: 14px;
+  }
+  .form-container h2 {
+    font-size: 1.4em;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   VPR.html (complaint form) uses Bootstrap markup (.form-group,
+   .form-control, .form-section) instead of .form-container, so it needs
+   its own rules to pick up the same look-and-feel.
+   --------------------------------------------------------------------- */
+#complaintForm {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#complaintForm .form-section {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(11, 42, 59, 0.08);
+  padding: 28px 30px;
+  margin-bottom: 24px;
+}
+
+#complaintForm .section-heading {
+  color: var(--secondary-color, #0b2a3b);
+  font-size: 1.15em;
+  font-weight: 700;
+  border-bottom: 2px solid #ffe89a;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+#complaintForm .form-group label {
+  font-weight: 600;
+  color: #22333b;
+  font-size: 0.94em;
+}
+
+#complaintForm .form-control,
+#complaintForm .form-control-file {
+  border: 1.5px solid #dfe4e7;
+  border-radius: 9px;
+  padding: 10px 14px;
+  height: auto;
+}
+
+#complaintForm .form-control:focus {
+  border-color: var(--secondary-color, #0b2a3b);
+  box-shadow: 0 0 0 3px rgba(11, 42, 59, 0.1);
+}
+
+#complaintForm .consent-block {
+  background: #f3f8fa;
+  border: 1px solid #dcebef;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+
+#complaintForm .consent-block .consent-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92em;
+  color: #22333b;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#complaintForm .consent-block .consent-checkbox input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  accent-color: var(--secondary-color, #0b2a3b);
+}
+
+#complaintForm .consent-block a {
+  color: var(--secondary-color, #0b2a3b);
+  font-weight: 700;
+}
+
+#complaintForm .consent-block .trust-note {
+  margin: 10px 0 0 27px;
+  font-size: 0.85em;
+  color: #52646c;
+}
+
+#complaintForm button[type="submit"] {
+  background: linear-gradient(135deg, #ffd83d, #ffc400);
+  color: #0b2a3b;
+  border: none;
+  padding: 14px 38px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.05em;
+  box-shadow: 0 6px 18px rgba(255, 196, 0, 0.35);
+}
+
+#complaintForm button[type="submit"]:hover {
+  transform: translateY(-2px);
+}
