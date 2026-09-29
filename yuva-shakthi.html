@@ -41,86 +41,7 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--light-bg);
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        color: var(--text-color);
-      }
-      .form-container {
-        background-color: var(--primary-color);
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        width: 90%;
-        max-width: 650px;
-        margin: 40px auto;
-        text-align: center;
-        box-sizing: border-box;
-      }
-      .form-container h2 {
-        margin-bottom: 10px;
-        color: var(--secondary-color);
-        font-size: 2em;
-        font-weight: 700;
-      }
-      .form-container .explanation {
-        font-size: 1.1em;
-        color: var(--text-color);
-        margin-bottom: 25px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 8px;
-        padding: 10px 15px;
-      }
-      .form-container label {
-        display: block;
-        text-align: left;
-        margin: 8px 0 4px 2px;
-        font-weight: 500;
-      }
-      .form-container input,
-      .form-container textarea,
-      .form-container select {
-        width: 100%;
-        padding: 12px 15px;
-        margin: 8px 0 16px 0;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 1em;
-        box-sizing: border-box;
-      }
-      .form-container textarea {
-        resize: vertical;
-        min-height: 80px;
-      }
-      .form-container .checkbox-group {
-        text-align: left;
-        margin-bottom: 16px;
-      }
-      .form-container .checkbox-group label {
-        display: inline-block;
-        margin-right: 15px;
-        font-weight: 400;
-      }
-      .form-container button {
-        background-color: var(--button-success);
-        color: white;
-        padding: 12px 25px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1.1em;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-        margin-top: 15px;
-      }
-      .form-container button:hover {
-        background-color: var(--button-success-hover);
-      }
-    </style>
+    <link rel="stylesheet" href="css/forms.css" />
   </head>
   <body>
     <div class="header">
@@ -458,6 +379,18 @@
           చేరాలనుకుంటున్నారు?</label
         >
         <textarea name="why" id="why" rows="3" required></textarea>
+
+        <div class="consent-block">
+          <label class="consent-checkbox">
+            <input type="checkbox" name="consent" id="consent" required />
+            <span>
+              I have read and agree to the
+              <a href="privacy-policy.html" target="_blank">Privacy Policy</a>, and I consent to my information being collected and used to process this request. /
+              <span class="te-txt">నేను <a href="privacy-policy.html" target="_blank">గోప్యతా విధానాన్ని</a> చదివి అంగీకరిస్తున్నాను, మరియు నా సమాచారాన్ని ఈ అభ్యర్థనను పరిష్కరించడానికి సేకరించి వినియోగించడానికి సమ్మతిస్తున్నాను.</span>
+            </span>
+          </label>
+          <div class="trust-note">&#128274; Your details are kept confidential and shared only with our constituency team to act on your request.</div>
+        </div>
 
         <button type="submit">Submit / సమర్పించండి</button>
       </form>
