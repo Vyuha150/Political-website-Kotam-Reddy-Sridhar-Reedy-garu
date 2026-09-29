@@ -34,7 +34,11 @@ Version:	1.1
 =========================================*/
 (function ($) {
   "use strict";
-  $(document).on("ready", function () {
+  // jQuery 3.0+ no longer fires a "ready" event on document, so
+  // $(document).on("ready", fn) silently never ran — meaning none of the
+  // carousels, WOW.js reveal animations, or nice-select styling below ever
+  // initialized. $(document).ready(fn) is the correct, version-safe form.
+  $(document).ready(function () {
     jQuery(window).on("scroll", function () {
       if ($(this).scrollTop() > 200) {
         $("#header .header-inner").addClass("sticky");
