@@ -4,6 +4,27 @@ import { supabase } from "./supabaseClient.js";
 // Update this to your deployed admin app URL when you go to production.
 const ADMIN_PANEL_URL = "https://admin-panel-political.vercel.app/signin";
 
+// Where a signed-in citizen (non-admin) lands after signing in.
+const CITIZEN_HOME_URL = "index.html";
+
+async function redirectAfterSignIn(userId) {
+  // Only admins get sent to the admin panel; everyone else stays on-site.
+  // Previously every signed-in user (citizens included) was redirected
+  // off-site here, which made the citizen sign-in flow dead-end on an
+  // admin login screen.
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("role")
+    .eq("id", userId)
+    .maybeSingle();
+
+  if (profile && profile.role === "admin") {
+    window.location.href = ADMIN_PANEL_URL;
+  } else {
+    window.location.href = CITIZEN_HOME_URL;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // SIGN UP LOGIC
   const signupForm = document.querySelector(".signup-form-box form");
@@ -34,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
           JSON.stringify({ name, mobile, gender })
         );
         alert("Signup successful! Please check your email to confirm.");
-        window.location.href = ADMIN_PANEL_URL;
+        window.location.href = CITIZEN_HOME_URL;
       }
     });
   }
@@ -86,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
         alert("Sign in successful!");
-        window.location.href = ADMIN_PANEL_URL;
+        await redirectAfterSignIn(data.user.id);
       }
     });
   }
